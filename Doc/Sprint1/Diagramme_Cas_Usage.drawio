@@ -1,0 +1,1098 @@
+<mxfile host="app.diagrams.net" modified="2024-03-07T02:50:32.540Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="5A8CXeFfV1K01x61GtaJ" version="24.0.2" type="google">
+  <diagram name="Page-1" id="XAyUBsBnI3HHXdj1QYkn">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-26" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="195" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="7QX8qAjpuFnfrD5Qq6Qq-27" target="7QX8qAjpuFnfrD5Qq6Qq-31">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="315" y="225" />
+              <mxPoint x="315" y="135" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="7QX8qAjpuFnfrD5Qq6Qq-27" target="7QX8qAjpuFnfrD5Qq6Qq-32">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="315" y="225" />
+              <mxPoint x="315" y="315" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-27" value="Bouger&lt;br&gt;(Avant, Arrière, Gauche, Droite)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="185" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-28" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="7QX8qAjpuFnfrD5Qq6Qq-26" target="7QX8qAjpuFnfrD5Qq6Qq-27">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="180" y="265" as="sourcePoint" />
+            <mxPoint x="230" y="215" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-30" value="choix d&#39;input" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=8.3;fontColor=#3a414a;spacing=0;rounded=1;absoluteArcSize=1;arcSize=9;fillColor=#ffffff;strokeWidth=1.5;strokeColor=none;lucidId=lF6gXYOqE4JN;" vertex="1" parent="1">
+          <mxGeometry x="320" y="219.5" width="60" height="11" as="geometry" />
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7QX8qAjpuFnfrD5Qq6Qq-31" target="7QX8qAjpuFnfrD5Qq6Qq-35">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="135" />
+              <mxPoint x="540" y="215" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-31" value="&lt;span data-lucid-content=&quot;{&amp;quot;t&amp;quot;:&amp;quot;Cliquer sur les quatres touches désignés sur le clavier (WASD par défaut) &amp;quot;,&amp;quot;m&amp;quot;:[]}&quot; data-lucid-type=&quot;application/vnd.lucid.text&quot;&gt;Cliquer sur les quatres touches désignés sur le clavier (WASD par défaut)&amp;nbsp;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="335" y="95" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="7QX8qAjpuFnfrD5Qq6Qq-32" target="7QX8qAjpuFnfrD5Qq6Qq-35">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="315" />
+              <mxPoint x="540" y="215" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-32" value="&lt;span data-lucid-content=&quot;{&amp;quot;t&amp;quot;:&amp;quot;Bouger le joystick / D-pad sur la manette&amp;quot;,&amp;quot;m&amp;quot;:[]}&quot; data-lucid-type=&quot;application/vnd.lucid.text&quot;&gt;Bouger le joystick / D-pad sur la manette&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="335" y="275" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="7QX8qAjpuFnfrD5Qq6Qq-35" target="7QX8qAjpuFnfrD5Qq6Qq-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="7QX8qAjpuFnfrD5Qq6Qq-35" target="7QX8qAjpuFnfrD5Qq6Qq-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="7QX8qAjpuFnfrD5Qq6Qq-35" target="7QX8qAjpuFnfrD5Qq6Qq-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="7QX8qAjpuFnfrD5Qq6Qq-35" target="7QX8qAjpuFnfrD5Qq6Qq-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-35" value="&lt;span data-lucid-content=&quot;{&amp;quot;t&amp;quot;:&amp;quot;Le personnage bouge dans la direction donnée&amp;quot;,&amp;quot;m&amp;quot;:[]}&quot; data-lucid-type=&quot;application/vnd.lucid.text&quot;&gt;Le personnage bouge dans la direction donnée&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="175" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="7QX8qAjpuFnfrD5Qq6Qq-38" target="7QX8qAjpuFnfrD5Qq6Qq-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-38" value="&lt;span data-lucid-content=&quot;{&amp;quot;t&amp;quot;:&amp;quot;Le personnage bouge sur le vaisseau de fin de niveau&amp;quot;,&amp;quot;m&amp;quot;:[]}&quot; data-lucid-type=&quot;application/vnd.lucid.text&quot;&gt;Le personnage bouge sur le vaisseau de fin de niveau&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="790" width="240" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="7QX8qAjpuFnfrD5Qq6Qq-39" target="7QX8qAjpuFnfrD5Qq6Qq-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-39" value="&lt;span data-lucid-content=&quot;{&amp;quot;t&amp;quot;:&amp;quot;Il y a un obstacle non-déplacable (ex: mur): personnage arrête de bouger&amp;quot;,&amp;quot;m&amp;quot;:[]}&quot; data-lucid-type=&quot;application/vnd.lucid.text&quot;&gt;Il y a un obstacle non-déplacable (ex: mur): personnage arrête de bouger&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="120" width="250" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="7QX8qAjpuFnfrD5Qq6Qq-40" target="7QX8qAjpuFnfrD5Qq6Qq-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-40" value="&lt;span data-lucid-content=&quot;{&amp;quot;t&amp;quot;:&amp;quot;Il n&#39;y a pas d&#39;obstacles: personnage bouge jusqu&#39;au bouton relaché&amp;quot;,&amp;quot;m&amp;quot;:[]}&quot; data-lucid-type=&quot;application/vnd.lucid.text&quot;&gt;Il n&#39;y a pas d&#39;obstacles: personnage bouge jusqu&#39;au bouton relaché&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="244.5" width="250" height="80.5" as="geometry" />
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="7QX8qAjpuFnfrD5Qq6Qq-41" target="7QX8qAjpuFnfrD5Qq6Qq-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-41" value="&lt;span data-lucid-content=&quot;{&amp;quot;t&amp;quot;:&amp;quot;Il y a un obstacle déplacable (ex: boite): personnage pousse l&#39;objet jusqu&#39;au bouton relaché&amp;quot;,&amp;quot;m&amp;quot;:[]}&quot; data-lucid-type=&quot;application/vnd.lucid.text&quot;&gt;Il y a un obstacle déplacable (ex: boite): personnage pousse l&#39;objet jusqu&#39;au bouton relaché&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="370" width="250" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-46" value="&lt;span data-lucid-content=&quot;{&amp;quot;t&amp;quot;:&amp;quot;Le personnage bouge sur le vaisseau de fin de niveau&amp;quot;,&amp;quot;m&amp;quot;:[]}&quot; data-lucid-type=&quot;application/vnd.lucid.text&quot;&gt;Le niveau se termine et on retourne vers l&#39;écran de choix de niveau&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1100" width="240" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-48" value="&lt;span data-lucid-content=&quot;{&amp;quot;t&amp;quot;:&amp;quot;Il n&#39;y a pas d&#39;obstacles: personnage bouge jusqu&#39;au bouton relaché&amp;quot;,&amp;quot;m&amp;quot;:[]}&quot; data-lucid-type=&quot;application/vnd.lucid.text&quot;&gt;Il n&#39;y a pas d&#39;obstacles: personnage bouge jusqu&#39;au bouton relaché&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1110" y="244.5" width="250" height="80.5" as="geometry" />
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-53" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="610" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="7QX8qAjpuFnfrD5Qq6Qq-56" target="7QX8qAjpuFnfrD5Qq6Qq-60">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="315" y="640" />
+              <mxPoint x="315" y="550" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="7QX8qAjpuFnfrD5Qq6Qq-56" target="7QX8qAjpuFnfrD5Qq6Qq-62">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="315" y="640" />
+              <mxPoint x="315" y="730" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-56" value="Prendre un objet" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="600" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-57" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="7QX8qAjpuFnfrD5Qq6Qq-53" target="7QX8qAjpuFnfrD5Qq6Qq-56">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="180" y="680" as="sourcePoint" />
+            <mxPoint x="230" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-58" value="choix d&#39;input" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=8.3;fontColor=#3a414a;spacing=0;rounded=1;absoluteArcSize=1;arcSize=9;fillColor=#ffffff;strokeWidth=1.5;strokeColor=none;lucidId=lF6gXYOqE4JN;" vertex="1" parent="1">
+          <mxGeometry x="320" y="634.5" width="60" height="11" as="geometry" />
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7QX8qAjpuFnfrD5Qq6Qq-60" target="7QX8qAjpuFnfrD5Qq6Qq-63">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="550" />
+              <mxPoint x="540" y="630" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-60" value="&lt;span data-lucid-content=&quot;{&amp;quot;t&amp;quot;:&amp;quot;Cliquer sur la touche d&#39;action désigné sur le clavier (E par défaut)&amp;quot;,&amp;quot;m&amp;quot;:[]}&quot; data-lucid-type=&quot;application/vnd.lucid.text&quot;&gt;Cliquer sur la touche d&#39;action désigné sur le clavier (E par défaut)&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="335" y="510" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="7QX8qAjpuFnfrD5Qq6Qq-62" target="7QX8qAjpuFnfrD5Qq6Qq-63">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="730" />
+              <mxPoint x="540" y="630" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-62" value="&lt;span data-lucid-content=&quot;{&amp;quot;t&amp;quot;:&amp;quot;Cliquer sur le bouton X de la manette (Xbox)&amp;quot;,&amp;quot;m&amp;quot;:[]}&quot; data-lucid-type=&quot;application/vnd.lucid.text&quot;&gt;Cliquer sur le bouton X de la manette (Xbox)&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="335" y="690" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-63" value="&lt;span data-lucid-content=&quot;{&amp;quot;t&amp;quot;:&amp;quot;Le personnage prend l&#39;objet&amp;quot;,&amp;quot;m&amp;quot;:[]}&quot; data-lucid-type=&quot;application/vnd.lucid.text&quot;&gt;Le personnage prend l&#39;objet&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="590" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-64" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="900" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="7QX8qAjpuFnfrD5Qq6Qq-67" target="7QX8qAjpuFnfrD5Qq6Qq-71">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="315" y="930" />
+              <mxPoint x="315" y="840" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="7QX8qAjpuFnfrD5Qq6Qq-67" target="7QX8qAjpuFnfrD5Qq6Qq-73">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="315" y="930" />
+              <mxPoint x="315" y="1020" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-67" value="Déposer un objet" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="890" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-68" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="7QX8qAjpuFnfrD5Qq6Qq-64" target="7QX8qAjpuFnfrD5Qq6Qq-67">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="180" y="970" as="sourcePoint" />
+            <mxPoint x="230" y="920" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-69" value="choix d&#39;input" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=8.3;fontColor=#3a414a;spacing=0;rounded=1;absoluteArcSize=1;arcSize=9;fillColor=#ffffff;strokeWidth=1.5;strokeColor=none;lucidId=lF6gXYOqE4JN;" vertex="1" parent="1">
+          <mxGeometry x="320" y="924.5" width="60" height="11" as="geometry" />
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7QX8qAjpuFnfrD5Qq6Qq-71" target="7QX8qAjpuFnfrD5Qq6Qq-74">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="840" />
+              <mxPoint x="540" y="920" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-71" value="&lt;span data-lucid-content=&quot;{&amp;quot;t&amp;quot;:&amp;quot;Cliquer sur la touche d&#39;action désigné sur le clavier (E par défaut)&amp;quot;,&amp;quot;m&amp;quot;:[]}&quot; data-lucid-type=&quot;application/vnd.lucid.text&quot;&gt;Cliquer sur la touche d&#39;action désigné sur le clavier (E par défaut)&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="335" y="800" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="7QX8qAjpuFnfrD5Qq6Qq-73" target="7QX8qAjpuFnfrD5Qq6Qq-74">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="1020" />
+              <mxPoint x="540" y="920" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-73" value="&lt;span data-lucid-content=&quot;{&amp;quot;t&amp;quot;:&amp;quot;Cliquer sur le bouton X de la manette (Xbox)&amp;quot;,&amp;quot;m&amp;quot;:[]}&quot; data-lucid-type=&quot;application/vnd.lucid.text&quot;&gt;Cliquer sur le bouton X de la manette (Xbox)&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="335" y="980" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-74" value="&lt;span data-lucid-content=&quot;{&amp;quot;t&amp;quot;:&amp;quot;Le personnage dépose l&#39;objet dans la direction du personnage&amp;quot;,&amp;quot;m&amp;quot;:[]}&quot; data-lucid-type=&quot;application/vnd.lucid.text&quot;&gt;Le personnage dépose l&#39;objet dans la direction du personnage&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="880" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-76" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1240" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="7QX8qAjpuFnfrD5Qq6Qq-79" target="7QX8qAjpuFnfrD5Qq6Qq-83">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="315" y="1270" />
+              <mxPoint x="315" y="1180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="7QX8qAjpuFnfrD5Qq6Qq-79" target="7QX8qAjpuFnfrD5Qq6Qq-85">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="315" y="1270" />
+              <mxPoint x="315" y="1360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-79" value="Utiliser le Slider" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="1230" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-80" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="7QX8qAjpuFnfrD5Qq6Qq-76" target="7QX8qAjpuFnfrD5Qq6Qq-79">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="180" y="1310" as="sourcePoint" />
+            <mxPoint x="230" y="1260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-81" value="choix d&#39;input" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=8.3;fontColor=#3a414a;spacing=0;rounded=1;absoluteArcSize=1;arcSize=9;fillColor=#ffffff;strokeWidth=1.5;strokeColor=none;lucidId=lF6gXYOqE4JN;" vertex="1" parent="1">
+          <mxGeometry x="320" y="1264.5" width="60" height="11" as="geometry" />
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7QX8qAjpuFnfrD5Qq6Qq-83" target="7QX8qAjpuFnfrD5Qq6Qq-86">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="1180" />
+              <mxPoint x="540" y="1260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-83" value="&lt;span data-lucid-content=&quot;{&amp;quot;t&amp;quot;:&amp;quot;bouger le curseur de la souris sur le Slider et clique gauche pour le déplacer&amp;quot;,&amp;quot;m&amp;quot;:[]}&quot; data-lucid-type=&quot;application/vnd.lucid.text&quot;&gt;bouger le curseur de la souris sur le Slider et clique gauche pour le déplacer&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="335" y="1140" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="7QX8qAjpuFnfrD5Qq6Qq-85" target="7QX8qAjpuFnfrD5Qq6Qq-86">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="1360" />
+              <mxPoint x="540" y="1260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-85" value="&lt;span data-lucid-content=&quot;{&amp;quot;t&amp;quot;:&amp;quot;Utiliser le thumbstick droit de gauche a droite&amp;quot;,&amp;quot;m&amp;quot;:[]}&quot; data-lucid-type=&quot;application/vnd.lucid.text&quot;&gt;Utiliser le thumbstick droit de gauche a droite&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="335" y="1320" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-88" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="7QX8qAjpuFnfrD5Qq6Qq-86" target="7QX8qAjpuFnfrD5Qq6Qq-87">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-86" value="&lt;span data-lucid-content=&quot;{&amp;quot;t&amp;quot;:&amp;quot;Le Slider bouge de haut en bas&amp;quot;,&amp;quot;m&amp;quot;:[]}&quot; data-lucid-type=&quot;application/vnd.lucid.text&quot;&gt;Le Slider bouge de haut en bas&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="1220" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7QX8qAjpuFnfrD5Qq6Qq-87" value="&lt;span data-lucid-content=&quot;{&amp;quot;t&amp;quot;:&amp;quot;L&#39;environnement traverse la quatrième dimension&amp;quot;,&amp;quot;m&amp;quot;:[]}&quot; data-lucid-type=&quot;application/vnd.lucid.text&quot;&gt;L&#39;environnement traverse la quatrième dimension&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="1220" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-5" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1650" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-8" target="vTOLgvmmzToRHPJq-wF8-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="315" y="1680" />
+              <mxPoint x="315" y="1590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-8" target="vTOLgvmmzToRHPJq-wF8-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="315" y="1680" />
+              <mxPoint x="315" y="1770" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-8" value="Mettre en pause" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="1640" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-9" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-5" target="vTOLgvmmzToRHPJq-wF8-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="180" y="1720" as="sourcePoint" />
+            <mxPoint x="230" y="1670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-10" value="choix d&#39;input" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=8.3;fontColor=#3a414a;spacing=0;rounded=1;absoluteArcSize=1;arcSize=9;fillColor=#ffffff;strokeWidth=1.5;strokeColor=none;lucidId=lF6gXYOqE4JN;" vertex="1" parent="1">
+          <mxGeometry x="320" y="1674.5" width="60" height="11" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-12" target="vTOLgvmmzToRHPJq-wF8-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-12" value="&lt;span data-lucid-content=&quot;{&amp;quot;t&amp;quot;:&amp;quot;bouger le curseur de la souris sur le Slider et clique gauche pour le déplacer&amp;quot;,&amp;quot;m&amp;quot;:[]}&quot; data-lucid-type=&quot;application/vnd.lucid.text&quot;&gt;Cliquer sur la touche de pause désigné sur le clavier&lt;br&gt;(ESC par défaut)&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="335" y="1550" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-14" target="vTOLgvmmzToRHPJq-wF8-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-14" value="&lt;span data-lucid-content=&quot;{&amp;quot;t&amp;quot;:&amp;quot;Utiliser le thumbstick droit de gauche a droite&amp;quot;,&amp;quot;m&amp;quot;:[]}&quot; data-lucid-type=&quot;application/vnd.lucid.text&quot;&gt;Cliquer sur le bouton pause de la manette&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="335" y="1730" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-15" value="&lt;span data-lucid-content=&quot;{&amp;quot;t&amp;quot;:&amp;quot;Utiliser le thumbstick droit de gauche a droite&amp;quot;,&amp;quot;m&amp;quot;:[]}&quot; data-lucid-type=&quot;application/vnd.lucid.text&quot;&gt;Utiliser le thumbstick droit de gauche a droite&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="1630" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-24" value="&lt;span data-lucid-content=&quot;{&amp;quot;t&amp;quot;:&amp;quot;Utiliser le thumbstick droit de gauche a droite&amp;quot;,&amp;quot;m&amp;quot;:[]}&quot; data-lucid-type=&quot;application/vnd.lucid.text&quot;&gt;Le menu pause apparait&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="810" y="1630" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-15" target="vTOLgvmmzToRHPJq-wF8-24">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="800" y="1680" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-33" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1960" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-36" target="vTOLgvmmzToRHPJq-wF8-40">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="315" y="1990" />
+              <mxPoint x="315" y="1905" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-36" target="vTOLgvmmzToRHPJq-wF8-42">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="315" y="1990" />
+              <mxPoint x="315" y="2075" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-36" value="Naviguer un menu" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="1950" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-37" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-33" target="vTOLgvmmzToRHPJq-wF8-36">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="180" y="2030" as="sourcePoint" />
+            <mxPoint x="230" y="1980" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-38" value="choix d&#39;input" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=8.3;fontColor=#3a414a;spacing=0;rounded=1;absoluteArcSize=1;arcSize=9;fillColor=#ffffff;strokeWidth=1.5;strokeColor=none;lucidId=lF6gXYOqE4JN;" vertex="1" parent="1">
+          <mxGeometry x="320" y="1984.5" width="60" height="11" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-40" target="vTOLgvmmzToRHPJq-wF8-43">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="1905" />
+              <mxPoint x="540" y="1980" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-40" value="Déplacer entre les options de haut en bas avec les touches désignés du clavier (W et S par défaut)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="335" y="1850" width="195" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-42" target="vTOLgvmmzToRHPJq-wF8-43">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="2075" />
+              <mxPoint x="540" y="1980" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-42" value="&lt;span data-lucid-content=&quot;{&amp;quot;t&amp;quot;:&amp;quot;Utiliser le thumbstick droit de gauche a droite&amp;quot;,&amp;quot;m&amp;quot;:[]}&quot; data-lucid-type=&quot;application/vnd.lucid.text&quot;&gt;Déplacer entre les options de haut en bas avec le thumbstick &lt;br&gt;ou le D-Pad&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="345" y="2020" width="175" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-43" value="L&#39;option sélectionné change de couleur" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="1940" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-44" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="2660" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-47" target="vTOLgvmmzToRHPJq-wF8-51">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="325" y="2690" />
+              <mxPoint x="325" y="2605" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-47" target="vTOLgvmmzToRHPJq-wF8-53">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="325" y="2690" />
+              <mxPoint x="325" y="2775" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-47" value="Cliquer sur un bouton du menu Pause" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="2650" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-48" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-44" target="vTOLgvmmzToRHPJq-wF8-47">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="190" y="2730" as="sourcePoint" />
+            <mxPoint x="240" y="2680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-49" value="choix d&#39;input" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=8.3;fontColor=#3a414a;spacing=0;rounded=1;absoluteArcSize=1;arcSize=9;fillColor=#ffffff;strokeWidth=1.5;strokeColor=none;lucidId=lF6gXYOqE4JN;" vertex="1" parent="1">
+          <mxGeometry x="330" y="2684.5" width="60" height="11" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-51" target="vTOLgvmmzToRHPJq-wF8-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-51" target="vTOLgvmmzToRHPJq-wF8-56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-51" target="vTOLgvmmzToRHPJq-wF8-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-51" target="vTOLgvmmzToRHPJq-wF8-58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-51" value="Cliquer sur la touche d&#39;action désigné sur le clavier (E par défaut)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="345" y="2550" width="195" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-53" target="vTOLgvmmzToRHPJq-wF8-55">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="590" y="2775" />
+              <mxPoint x="590" y="2570" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-53" target="vTOLgvmmzToRHPJq-wF8-56">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="590" y="2775" />
+              <mxPoint x="590" y="2680" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-53" target="vTOLgvmmzToRHPJq-wF8-57">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="590" y="2775" />
+              <mxPoint x="590" y="2780" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-53" target="vTOLgvmmzToRHPJq-wF8-58">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="590" y="2775" />
+              <mxPoint x="590" y="2880" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-53" value="Cliquer sur le bouton X de la manette (Xbox)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="355" y="2720" width="175" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-55" target="vTOLgvmmzToRHPJq-wF8-67">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-55" value="Bouton Réessayer:" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="2530" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-56" value="Bouton Options:" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="2640" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-57" value="Bouton Retourner au choix de niveaux:" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="2740" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-58" value="Bouton Retourner au menu principal:" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="2840" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-67" value="Le niveau recommence" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="890" y="2530" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-69" value="Le menu option apparait" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="890" y="2640" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.021;entryY=0.497;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-56" target="vTOLgvmmzToRHPJq-wF8-69">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-71" value="Quitte le niveau et ouvre l&#39;écran de choix de niveaux" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="890" y="2740" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.021;entryY=0.497;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="vTOLgvmmzToRHPJq-wF8-71">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="830" y="2780" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-73" value="Quitte le niveau et ouvre l&#39;écran de menu principal" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="890" y="2840" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.021;entryY=0.497;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="vTOLgvmmzToRHPJq-wF8-73">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="830" y="2880" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-75" value="&lt;span data-lucid-content=&quot;{&amp;quot;t&amp;quot;:&amp;quot;Le personnage bouge sur le vaisseau de fin de niveau&amp;quot;,&amp;quot;m&amp;quot;:[]}&quot; data-lucid-type=&quot;application/vnd.lucid.text&quot;&gt;Sauvegarde progression dans la BD&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1390" width="240" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.015;entryY=0.494;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="7QX8qAjpuFnfrD5Qq6Qq-46" target="vTOLgvmmzToRHPJq-wF8-75">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-80" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="3110" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-83" target="vTOLgvmmzToRHPJq-wF8-90">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="325" y="3140" />
+              <mxPoint x="325" y="3055" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-83" target="vTOLgvmmzToRHPJq-wF8-95">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="325" y="3140" />
+              <mxPoint x="325" y="3225" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-83" value="Cliquer sur un bouton du menu Principal" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="3100" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-84" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-80" target="vTOLgvmmzToRHPJq-wF8-83">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="190" y="3180" as="sourcePoint" />
+            <mxPoint x="240" y="3130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-85" value="choix d&#39;input" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=8.3;fontColor=#3a414a;spacing=0;rounded=1;absoluteArcSize=1;arcSize=9;fillColor=#ffffff;strokeWidth=1.5;strokeColor=none;lucidId=lF6gXYOqE4JN;" vertex="1" parent="1">
+          <mxGeometry x="330" y="3134.5" width="60" height="11" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-86" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-90" target="vTOLgvmmzToRHPJq-wF8-96">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-90" target="vTOLgvmmzToRHPJq-wF8-97">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-88" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-90" target="vTOLgvmmzToRHPJq-wF8-98">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-90" value="Cliquer sur la touche d&#39;action désigné sur le clavier (E par défaut)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="345" y="3000" width="195" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-91" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-95" target="vTOLgvmmzToRHPJq-wF8-96">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="590" y="3225" />
+              <mxPoint x="590" y="3020" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-95" target="vTOLgvmmzToRHPJq-wF8-97">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="590" y="3225" />
+              <mxPoint x="590" y="3130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-93" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-95" target="vTOLgvmmzToRHPJq-wF8-98">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="590" y="3225" />
+              <mxPoint x="590" y="3230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-95" value="Cliquer sur le bouton X de la manette (Xbox)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="355" y="3170" width="175" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-102" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-96" target="vTOLgvmmzToRHPJq-wF8-100">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-96" value="Bouton Jouer:" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="2980" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-103" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-97" target="vTOLgvmmzToRHPJq-wF8-101">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-97" value="Bouton Options:" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="3090" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-98" value="Bouton Quitter:" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="3190" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-100" value="Ouvrir le menu Sélection de partie" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="890" y="2980" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-101" value="Ouvrir le menu Option" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="890" y="3090" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-104" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="vTOLgvmmzToRHPJq-wF8-105">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="830" y="3230" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-105" value="Fermer l&#39;application" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="890" y="3190" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-106" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="3490" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-107" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-109" target="vTOLgvmmzToRHPJq-wF8-115">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="325" y="3520" />
+              <mxPoint x="325" y="3435" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-108" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-109" target="vTOLgvmmzToRHPJq-wF8-119">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="325" y="3520" />
+              <mxPoint x="325" y="3605" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-109" value="Changer une option" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="3480" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-110" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-106" target="vTOLgvmmzToRHPJq-wF8-109">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="190" y="3560" as="sourcePoint" />
+            <mxPoint x="240" y="3510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-111" value="choix d&#39;input" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=8.3;fontColor=#3a414a;spacing=0;rounded=1;absoluteArcSize=1;arcSize=9;fillColor=#ffffff;strokeWidth=1.5;strokeColor=none;lucidId=lF6gXYOqE4JN;" vertex="1" parent="1">
+          <mxGeometry x="330" y="3514.5" width="60" height="11" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-112" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-115" target="vTOLgvmmzToRHPJq-wF8-121">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-133" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-115" target="vTOLgvmmzToRHPJq-wF8-130">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-115" value="Cliquer sur les touches gauches et droites désigné sur le clavier&lt;br&gt;(A et D par défaut)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="345" y="3380" width="195" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-116" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-119" target="vTOLgvmmzToRHPJq-wF8-121">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="590" y="3605" />
+              <mxPoint x="590" y="3400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-132" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-119" target="vTOLgvmmzToRHPJq-wF8-130">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="590" y="3605" />
+              <mxPoint x="590" y="3530" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-119" value="Déplacer de gauche / droite le thumbstick ou le D-pad de la manette" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="355" y="3550" width="175" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-120" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-121" target="vTOLgvmmzToRHPJq-wF8-125">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-121" value="Changer l&#39;option sélectionné avec les boutons gauche droites" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="3360" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-125" value="Sauvegarde dans la BD lorsque le joueur quitte l&#39;écran" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="890" y="3360" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-129" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-130" target="vTOLgvmmzToRHPJq-wF8-131">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-130" value="Cliquer sur le bouton&lt;br&gt;Modifier Boutons&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="3490" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-131" value="Ouvrir le menu Modifier Bouton" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="890" y="3490" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-134" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="3840" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-135" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-137" target="vTOLgvmmzToRHPJq-wF8-142">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="325" y="3870" />
+              <mxPoint x="325" y="3785" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-136" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-137" target="vTOLgvmmzToRHPJq-wF8-145">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="325" y="3870" />
+              <mxPoint x="325" y="3955" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-137" value="Modifier Boutons" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="3830" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-138" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="vTOLgvmmzToRHPJq-wF8-137">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="70" y="3870" as="sourcePoint" />
+            <mxPoint x="240" y="3860" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-139" value="choix d&#39;input" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=8.3;fontColor=#3a414a;spacing=0;rounded=1;absoluteArcSize=1;arcSize=9;fillColor=#ffffff;strokeWidth=1.5;strokeColor=none;lucidId=lF6gXYOqE4JN;" vertex="1" parent="1">
+          <mxGeometry x="330" y="3864.5" width="60" height="11" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-140" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-142" target="vTOLgvmmzToRHPJq-wF8-147">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-142" value="Cliquer sur la touche d&#39;action désigné sur le clavier (E par défaut)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="345" y="3730" width="195" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-143" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-145" target="vTOLgvmmzToRHPJq-wF8-147">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="590" y="3955" />
+              <mxPoint x="590" y="3870" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-145" value="Cliquer sur le bouton X de la manette (Xbox)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="355" y="3900" width="175" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-164" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-147" target="vTOLgvmmzToRHPJq-wF8-163">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-147" value="Changer le bouton sélectionné en appuyant sur une touche, ou ESC pour annuler&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="3830" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-153" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-36" target="vTOLgvmmzToRHPJq-wF8-157">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="220" y="2280" />
+              <mxPoint x="315" y="2280" />
+              <mxPoint x="315" y="2205" />
+            </Array>
+            <mxPoint x="310" y="2290" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-154" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-36" target="vTOLgvmmzToRHPJq-wF8-159">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="220" y="2280" />
+              <mxPoint x="315" y="2280" />
+              <mxPoint x="315" y="2365" />
+            </Array>
+            <mxPoint x="310" y="2280" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-155" value="choix d&#39;input" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=8.3;fontColor=#3a414a;spacing=0;rounded=1;absoluteArcSize=1;arcSize=9;fillColor=#ffffff;strokeWidth=1.5;strokeColor=none;lucidId=lF6gXYOqE4JN;" vertex="1" parent="1">
+          <mxGeometry x="320" y="2284.5" width="60" height="11" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-156" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-157" target="vTOLgvmmzToRHPJq-wF8-160">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="2205" />
+              <mxPoint x="540" y="2280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-157" value="Revenir en arrière avec la touche désigné du clavier (ESC par défaut)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="335" y="2150" width="195" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-158" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-159" target="vTOLgvmmzToRHPJq-wF8-160">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="2375" />
+              <mxPoint x="540" y="2280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-159" value="Revenir en arrière avec la touche B de la manette (Xbox)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="345" y="2320" width="175" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-160" value="Reviens au menu d&#39;avant" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="2240" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-163" value="Modifier la BD selon les changement" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="910" y="3830" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-165" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="4220" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-166" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-168" target="vTOLgvmmzToRHPJq-wF8-172">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="325" y="4250" />
+              <mxPoint x="325" y="4165" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-167" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-168" target="vTOLgvmmzToRHPJq-wF8-174">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="325" y="4250" />
+              <mxPoint x="325" y="4335" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-168" value="Sélectionner Partie dans menu Jouer" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="4210" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-169" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="vTOLgvmmzToRHPJq-wF8-168">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="70" y="4250" as="sourcePoint" />
+            <mxPoint x="240" y="4240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-170" value="choix d&#39;input" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=8.3;fontColor=#3a414a;spacing=0;rounded=1;absoluteArcSize=1;arcSize=9;fillColor=#ffffff;strokeWidth=1.5;strokeColor=none;lucidId=lF6gXYOqE4JN;" vertex="1" parent="1">
+          <mxGeometry x="330" y="4244.5" width="60" height="11" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-180" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-172" target="vTOLgvmmzToRHPJq-wF8-179">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-172" value="Cliquer sur la touche d&#39;action désigné sur le clavier (E par défaut)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="345" y="4110" width="195" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-181" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-174" target="vTOLgvmmzToRHPJq-wF8-179">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-174" value="Cliquer sur le bouton X de la manette (Xbox)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="355" y="4280" width="175" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-179" value="Ouvrir menu partie" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="4195" width="195" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-186" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="45" y="4550" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-187" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-189" target="vTOLgvmmzToRHPJq-wF8-193">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="4580" />
+              <mxPoint x="320" y="4495" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-188" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-189" target="vTOLgvmmzToRHPJq-wF8-195">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="4580" />
+              <mxPoint x="320" y="4665" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-189" value="Sélectionner bouton dans menu partie" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="135" y="4540" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-190" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="vTOLgvmmzToRHPJq-wF8-189">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="65" y="4580" as="sourcePoint" />
+            <mxPoint x="235" y="4570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-191" value="choix d&#39;input" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=8.3;fontColor=#3a414a;spacing=0;rounded=1;absoluteArcSize=1;arcSize=9;fillColor=#ffffff;strokeWidth=1.5;strokeColor=none;lucidId=lF6gXYOqE4JN;" vertex="1" parent="1">
+          <mxGeometry x="325" y="4574.5" width="60" height="11" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-200" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-193" target="vTOLgvmmzToRHPJq-wF8-197">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="570" y="4495" />
+              <mxPoint x="570" y="4525" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-204" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-193" target="vTOLgvmmzToRHPJq-wF8-198">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="570" y="4495" />
+              <mxPoint x="570" y="4630" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-193" value="Cliquer sur la touche d&#39;action désigné sur le clavier (E par défaut)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="4440" width="195" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-202" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-195" target="vTOLgvmmzToRHPJq-wF8-197">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="570" y="4665" />
+              <mxPoint x="570" y="4525" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-203" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-195" target="vTOLgvmmzToRHPJq-wF8-198">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="570" y="4665" />
+              <mxPoint x="570" y="4630" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-195" value="Cliquer sur le bouton X de la manette (Xbox)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="4610" width="175" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-211" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-197" target="vTOLgvmmzToRHPJq-wF8-205">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-212" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-197" target="vTOLgvmmzToRHPJq-wF8-206">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-213" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-197" target="vTOLgvmmzToRHPJq-wF8-207">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-197" value="Partie déja créé:" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="4490" width="110" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-214" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-198" target="vTOLgvmmzToRHPJq-wF8-208">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-215" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-198" target="vTOLgvmmzToRHPJq-wF8-209">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-216" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-198" target="vTOLgvmmzToRHPJq-wF8-210">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-198" value="Partie vide:" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="627.5" y="4600" width="115" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-223" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-205" target="vTOLgvmmzToRHPJq-wF8-217">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-205" value="Continuer" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="4400" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-224" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-206" target="vTOLgvmmzToRHPJq-wF8-218">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-206" value="Renommer" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="4450" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-225" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-207" target="vTOLgvmmzToRHPJq-wF8-219">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-207" value="Détruire" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="4500" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-227" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-208" target="vTOLgvmmzToRHPJq-wF8-220">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="913" y="4608" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-208" value="Commencer" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="4585.5" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-228" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-209" target="vTOLgvmmzToRHPJq-wF8-221">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-209" value="Renommer" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="4635.5" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-229" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-210" target="vTOLgvmmzToRHPJq-wF8-222">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-210" value="Annuler" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="4685.5" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-217" value="Ouvrir menu Sélection de niveaux" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="935" y="4400" width="135" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-232" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-218" target="vTOLgvmmzToRHPJq-wF8-230">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-218" value="Renommer la partie" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="935" y="4450" width="135" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-234" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-219" target="vTOLgvmmzToRHPJq-wF8-233">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-219" value="Détruire Partie et retour au Menu Sélection de partie" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="935" y="4500" width="155" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-220" value="Sauvegarder partie dans BD et ammener au menu Sélection de partie" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="935" y="4580" width="275" height="55.5" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-236" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-221" target="vTOLgvmmzToRHPJq-wF8-235">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-221" value="Renommer la partie" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="935" y="4635.5" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-222" value="Revenir au menu Sélection de partie" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="935" y="4685.5" width="175" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-230" value="Sauvegarder dans BD" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1110" y="4450" width="135" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-233" value="Sauvegarder dans BD" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1110" y="4500" width="135" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-235" value="Sauvegarder dans BD" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="4635.5" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-290" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-237" target="vTOLgvmmzToRHPJq-wF8-240">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-237" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry y="4925" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-238" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="vTOLgvmmzToRHPJq-wF8-245">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="730" y="4955" />
+              <mxPoint x="730" y="4875" />
+            </Array>
+            <mxPoint x="705" y="4955" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-239" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-285" target="vTOLgvmmzToRHPJq-wF8-248">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="730" y="4955" />
+              <mxPoint x="730" y="5005" />
+              <mxPoint x="780" y="5005" />
+            </Array>
+            <mxPoint x="720" y="4960" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-288" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-240" target="vTOLgvmmzToRHPJq-wF8-281">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-240" value="Sélection de partie" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="4915" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-242" value="choix d&#39;input" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=8.3;fontColor=#3a414a;spacing=0;rounded=1;absoluteArcSize=1;arcSize=9;fillColor=#ffffff;strokeWidth=1.5;strokeColor=none;lucidId=lF6gXYOqE4JN;" vertex="1" parent="1">
+          <mxGeometry x="730" y="4949.5" width="50" height="11" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-292" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-245" target="vTOLgvmmzToRHPJq-wF8-291">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-245" value="Cliquer sur les touches gauches et droites désigné sur le clavier&lt;br&gt;(A et D par défaut)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="4820" width="195" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-293" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-248" target="vTOLgvmmzToRHPJq-wF8-291">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-248" value="Déplacer dans le menu avec Gauche / Droite et Cliquer sur le bouton X de la manette (Xbox)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="4949.5" width="175" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-289" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-281" target="vTOLgvmmzToRHPJq-wF8-285">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-281" value="Chercher dans la BD les informations à afficher concernant les niveaux" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="4900" width="195" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-285" value="Afficher tout les niveaux" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="4900" width="195" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-296" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-291" target="vTOLgvmmzToRHPJq-wF8-294">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-297" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-291" target="vTOLgvmmzToRHPJq-wF8-295">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-291" value="Afficher le nom du niveau sélectionné et si le joeur l&#39;a complété" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="4885" width="195" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-302" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-294" target="vTOLgvmmzToRHPJq-wF8-299">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-294" value="Cliquer sur la touche d&#39;action désigné sur le clavier (E par défaut)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1290" y="4810" width="210" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-301" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vTOLgvmmzToRHPJq-wF8-295" target="vTOLgvmmzToRHPJq-wF8-299">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-295" value="Cliquer sur le bouton X de la manette (Xbox)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1290" y="4960.5" width="210" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-298" value="choix d&#39;input" style="html=1;overflow=block;blockSpacing=1;whiteSpace=wrap;fontSize=8.3;fontColor=#3a414a;spacing=0;rounded=1;absoluteArcSize=1;arcSize=9;fillColor=#ffffff;strokeWidth=1.5;strokeColor=none;lucidId=lF6gXYOqE4JN;" vertex="1" parent="1">
+          <mxGeometry x="1260" y="4934.5" width="50" height="11" as="geometry" />
+        </mxCell>
+        <mxCell id="vTOLgvmmzToRHPJq-wF8-299" value="Si le niveau est débloqué, entrer dans le niveau&lt;br&gt;&lt;br&gt;Sinon rien" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1550" y="4875" width="195" height="110" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
