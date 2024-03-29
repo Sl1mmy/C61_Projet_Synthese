@@ -5,7 +5,6 @@ using UnityEngine.UI;
 using UnityEditor;
 using System.IO;
 using UnityEngine.Networking;
-using System.Collections;
 
 public class OpenImageplz : MonoBehaviour
 {
