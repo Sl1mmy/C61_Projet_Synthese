@@ -4,10 +4,11 @@ using UnityEngine;
 
 [RequireComponent(typeof(Camera))]
 [ExecuteInEditMode]
-public class RaymarchCam : MonoBehaviour
+public class RaymarchCam : SceneViewFilter
 {
     [SerializeField]
     private Shader _shader;
+    List<ComputeBuffer> buffersToDispose;
 
 
     public Material _raymarchMaterial
@@ -42,7 +43,15 @@ public class RaymarchCam : MonoBehaviour
     public Transform _directionalLight;
 
     public float _maxDistance;
-    public Vector4 _sphere1;
+    public float _maxIterations;
+
+    [Header("4D transform")]
+    public float _wPosition;
+    public Vector3 _wRotation;
+
+
+    [HideInInspector]
+    public List<shape4d> orderedShapes = new List<shape4d>();
 
 
     /* fonction post-process, utilisé ici pour 
@@ -51,6 +60,9 @@ public class RaymarchCam : MonoBehaviour
      */
     private void OnRenderImage(RenderTexture source, RenderTexture destination)
     {
+        buffersToDispose = new List<ComputeBuffer>();
+        CreateScene();
+
         if (!_raymarchMaterial)
         {
             Graphics.Blit(source, destination);
@@ -61,9 +73,14 @@ public class RaymarchCam : MonoBehaviour
         _raymarchMaterial.SetMatrix("_CamFrustum", CamFrustum(_camera));
         _raymarchMaterial.SetMatrix("_CamToWorld", _camera.cameraToWorldMatrix);
         _raymarchMaterial.SetFloat("_maxDistance", _maxDistance);
-        _raymarchMaterial.SetVector("_sphere1", _sphere1);
+        _raymarchMaterial.SetFloat("_maxIterations", _maxIterations);
+
+        _raymarchMaterial.SetVector("_wRotation", _wRotation * Mathf.Deg2Rad);
+        _raymarchMaterial.SetFloat("w", _wPosition);
+
 
         RenderTexture.active = destination;
+        _raymarchMat.SetTexture("_MainTex", source);
         GL.PushMatrix();
         GL.LoadOrtho();
         _raymarchMaterial.SetPass(0);
@@ -87,6 +104,11 @@ public class RaymarchCam : MonoBehaviour
 
         GL.End();
         GL.PopMatrix();
+
+        foreach (var buffer in buffersToDispose)
+        {
+            buffer.Dispose();
+        }
     } 
 
     //
@@ -110,5 +132,75 @@ public class RaymarchCam : MonoBehaviour
         frustum.SetRow(3, BotLeft);
 
         return frustum;
+    }
+
+    void CreateScene()
+    {
+        List<shape4d> shapes = new List<shape4d>(FindObjectsOfType<shape4d>());
+        shapes.Sort((a, b) => a.operation.CompareTo(b.operation));
+
+        orderedShapes = new List<shape4d>();
+
+        foreach (var shape in shapes)
+        {
+            if (shape.transform.parent == null)
+            {
+                Transform parentShape = shape.transform;
+                orderedShapes.Add(shape);
+                shape.numChildren = parentShape.childCount;
+                for (int j = 0; j < parentShape.childCount; j++)
+                {
+                    if(parentShape.GetChild(j).TryGetComponent(out shape4d shape4D))
+                    {
+                        orderedShapes.Add(shape4D);
+                        orderedShapes[orderedShapes.Count - 1].numChildren = 0;
+                    }
+                }
+            }
+        }
+
+        ShapeData[] shapeData = new ShapeData[orderedShapes.Count];
+        for (int i = 0; i < orderedShapes.Count; i++)
+        {
+            var s = orderedShapes[i];
+            Vector3 color = new Vector3(s.color.r, s.color.g, s.color.b);
+            shapeData[i] = new ShapeData
+            {
+                position = s.Position(),
+                scale = s.Scale(),
+                rotation = s.Rotation(),
+                rotationW = s.RotationW(),
+                color = color,
+                shapeType = (int)s.shapeType,
+                operation = (int)s.operation,
+                blendStrength = s.smoothRadius * 3,
+                numChildren = s.numChildren
+            };
+        }
+
+        ComputeBuffer shapeBuffer = new ComputeBuffer(shapeData.Length, ShapeData.GetSize());
+        shapeBuffer.SetData(shapeData);
+        _raymarchMaterial.SetBuffer("shapes", shapeBuffer);
+        _raymarchMaterial.SetInt("numShapes", shapeData.Length);
+
+        buffersToDispose.Add(shapeBuffer);
+    }
+
+    struct ShapeData
+    {
+        public Vector4 position;
+        public Vector4 scale;
+        public Vector3 rotation;
+        public Vector3 rotationW;
+        public Vector3 color;
+        public int shapeType;
+        public int operation;
+        public float blendStrength;
+        public int numChildren;
+
+        public static int GetSize()
+        {
+            return 84;
+        }
     }
 }
