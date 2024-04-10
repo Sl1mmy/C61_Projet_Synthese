@@ -32,6 +32,8 @@ Shader "Raymarch/RaymarchShader"
             uniform float4 _sphere1;
             uniform float3 _LightDir;
 
+
+            //Structure représentant une forme dans l'espace 4D pour le rendu de raymarching.
             struct Shape 
             {
                 float4 position;
@@ -78,6 +80,11 @@ Shader "Raymarch/RaymarchShader"
                 return o;
             }
 
+
+            // Calcule et retourne la distance signée d'un point à une forme géométrique dans l'espace 4D, en tenant compte de sa position et de sa rotation.
+            // shape : La forme géométrique à évaluer.
+            // position4D : La position du point dans l'espace 4D.
+            // RETOURNE: La distance signée du point à la forme géométrique spécifiée.
             float GetShapeDistance(Shape shape, float4 position4D) 
             {
                 position4D -= shape.position;
@@ -111,11 +118,13 @@ Shader "Raymarch/RaymarchShader"
                 return _maxDistance;
             }
 
+
+            // Calcule la distance signée d'un point à un champ de distance composé de formes géométriques dans l'espace 4D, 
+            // en appliquant les transformations nécessaires et en combinant les distances de chaque forme.
+            // position : La position du point dans l'espace 3D.
+            // RETOURNE : La distance signée du point au champ de distance.
             float distanceField(float3 position) 
             {
-                //float Sphere1 = sdSphere(position - _sphere1.xyz, _sphere1.w);
-                //return Sphere1;
-
                 float4 position4D = float4 (position, w);
                 if(length(_wRotation) != 0) 
                 {
@@ -154,6 +163,10 @@ Shader "Raymarch/RaymarchShader"
                 return float4(globalDistance, globalColor);
             }
 
+
+            // Calcule et retourne la normale d'un point sur une surface définie par un champ de distance, en utilisant une différence finie pour estimer la pente.
+            // position : La position du point sur la surface.
+            // RETOURNE : La normale de la surface au point spécifié.
             float3 getNormal(float3 position) 
             {
                 const float2 offset = float2(0.001, 0.0);
@@ -164,6 +177,12 @@ Shader "Raymarch/RaymarchShader"
                 return normalize(n);
             }
 
+
+            // Effectue le raymarching le long d'un rayon donné depuis un point d'origine dans une direction donnée jusqu'à une certaine profondeur, en évaluant les distances de chaque itération pour déterminer les collisions et en appliquant le rendu en fonction.
+            // rayOrigin : L'origine du rayon.
+            // rayDirection : La direction du rayon.
+            // depth : La profondeur maximale à laquelle le rayon doit être suivi.
+            // RETOURNE La couleur résultante après le raymarching.
             fixed4 raymarching(float3 rayOrigin, float3 rayDirection, float depth)
             {
                 fixed4 result = fixed4(1,1,1,1);
@@ -196,6 +215,10 @@ Shader "Raymarch/RaymarchShader"
                 return result;
             }
 
+
+            // Fonction fragment chargée de générer la couleur du pixel en utilisant le raymarching pour le rendu de la scène.
+            // i : La structure contenant les informations du vertex transformé.
+            // RETOURNE La couleur résultante du pixel après le traitement du raymarching.
             fixed4 frag (v2f i) : SV_Target
             {
                 float depth = LinearEyeDepth(tex2D(_CameraDepthTexture, i.uv).r);

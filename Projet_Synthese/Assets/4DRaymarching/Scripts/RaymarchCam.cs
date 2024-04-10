@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/// <summary>
+/// Classe gérant le rendu par raymarching dans la vue de scène Unity, 
+/// en utilisant les objets shape4d pour générer la scène.
+/// </summary>
 [RequireComponent(typeof(Camera))]
 [ExecuteInEditMode]
 public class RaymarchCam : SceneViewFilter
@@ -11,6 +16,10 @@ public class RaymarchCam : SceneViewFilter
     List<ComputeBuffer> buffersToDispose;
 
 
+
+    /// <summary>
+    /// Propriété pour accéder ou créer un matériau de raymarch avec un shader spécifié.
+    /// </summary>
     public Material _raymarchMaterial
     {
         get 
@@ -26,6 +35,10 @@ public class RaymarchCam : SceneViewFilter
 
     private Material _raymarchMat;
 
+
+    /// <summary>
+    /// Propriété pour obtenir la caméra attachée à cet objet, la créant si nécessaire.
+    /// </summary>
     public Camera _camera
     {
         get
@@ -54,10 +67,11 @@ public class RaymarchCam : SceneViewFilter
     public List<shape4d> orderedShapes = new List<shape4d>();
 
 
-    /* fonction post-process, utilisé ici pour 
-     * 
-     * 
-     */
+    /// <summary>
+    /// Applique le rendu d'image en utilisant le raymarching, en configurant les paramètres nécessaires comme la direction de la lumière, les distances maximales et les itérations maximales, et en plaçant correctement les textures sur les écrans de destination.
+    /// </summary>
+    /// <param name="source">La texture source à utiliser pour le rendu.</param>
+    /// <param name="destination">La texture de destination sur laquelle le rendu final sera appliqué.</param>
     private void OnRenderImage(RenderTexture source, RenderTexture destination)
     {
         buffersToDispose = new List<ComputeBuffer>();
@@ -109,9 +123,13 @@ public class RaymarchCam : SceneViewFilter
         {
             buffer.Dispose();
         }
-    } 
+    }
 
-    //
+    /// <summary>
+    /// Calcule et retourne la matrice de projection de la caméra basée sur ses paramètres de champ de vision et de rapport d'aspect.
+    /// </summary>
+    /// <param name="cam">La caméra pour laquelle la matrice de projection est calculée.</param>
+    /// <returns>La matrice de projection de la caméra.</returns>
     private Matrix4x4 CamFrustum(Camera cam)
     {
         Matrix4x4 frustum = Matrix4x4.identity;
@@ -134,6 +152,10 @@ public class RaymarchCam : SceneViewFilter
         return frustum;
     }
 
+    /// <summary>
+    /// Crée la scène à partir des objets de forme4d présents dans la scène Unity, 
+    /// en ordonnant les formes selon leur opération et en collectant les données nécessaires pour le rendu de raymarching.
+    /// </summary>
     void CreateScene()
     {
         List<shape4d> shapes = new List<shape4d>(FindObjectsOfType<shape4d>());
@@ -186,6 +208,9 @@ public class RaymarchCam : SceneViewFilter
         buffersToDispose.Add(shapeBuffer);
     }
 
+    /// <summary>
+    /// Structure contenant les données d'une forme pour le rendu de raymarching.
+    /// </summary>
     struct ShapeData
     {
         public Vector4 position;
@@ -200,7 +225,7 @@ public class RaymarchCam : SceneViewFilter
 
         public static int GetSize()
         {
-            return 84;
+            return 84; //84 pour le size du ShapeData en bytes
         }
     }
 }

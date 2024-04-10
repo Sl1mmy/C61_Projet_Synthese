@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Classe représentant une forme dans un espace 4D, utilisée pour le rendu par raymarching.
+/// </summary>
 public class shape4d : MonoBehaviour
 {
     public enum ShapeType { HyperSphere, HyperCube, DuoCylinder, HyperCone, HyperPlane };
@@ -25,26 +28,38 @@ public class shape4d : MonoBehaviour
     public int numChildren;
     Vector4 parentScale = Vector4.one;
 
-    //4D position
+    /// <summary>
+    /// Calcule et retourne la position de la forme dans l'espace 4D.
+    /// </summary>
+    /// <returns>La position de la forme dans l'espace 4D.</returns>
     public Vector4 Position()
     {
         Vector3 position3D = transform.position;
         return new Vector4(position3D.x, position3D.y, position3D.z, positionW);
     }
 
-    //3D rotation
+    /// <summary>
+    /// Calcule et retourne la rotation de la forme dans l'espace 3D, convertie en radians.
+    /// </summary>
+    /// <returns>La rotation de la forme dans l'espace 3D en radians.</returns>
     public Vector3 Rotation()
     {
         return transform.eulerAngles * Mathf.Deg2Rad;
     }
 
-    //Rotation axe W
+    /// <summary>
+    /// Calcule et retourne la rotation de la forme autour de l'axe W dans l'espace 4D, convertie en radians.
+    /// </summary>
+    /// <returns>La rotation de la forme autour de l'axe W dans l'espace 4D en radians.</returns>
     public Vector3 RotationW()
     {
         return rotationW * Mathf.Deg2Rad;
     }
 
-    //4D scale
+    /// <summary>
+    /// Calcule et retourne l'échelle de la forme dans l'espace 4D, en tenant compte de l'échelle parente le cas échéant.
+    /// </summary>
+    /// <returns>L'échelle de la forme dans l'espace 4D.</returns>
     public Vector4 Scale()
     {
         if (transform.parent != null && transform.parent.TryGetComponent(out shape4d shape))

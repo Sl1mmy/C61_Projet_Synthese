@@ -3,9 +3,10 @@ using UnityEngine;
 using UnityEditor;
 #endif
 
-// ****************** Shows the Raymarched objects in the sceneview ****************** 
-
-
+/// <summary>
+/// Classe de base pour les filtres de la vue de scène Unity, 
+/// permettant de synchroniser les paramètres entre la vue de scène et la caméra principale.
+/// </summary>
 public class SceneViewFilter : MonoBehaviour
 {
 #if UNITY_EDITOR
@@ -21,18 +22,22 @@ public class SceneViewFilter : MonoBehaviour
         SceneView.duringSceneGui += CheckMe;
     }
 
+    /// <summary>
+    /// Méthode statique appelée pour vérifier et synchroniser les filtres de la vue de scène avec la caméra principale.
+    /// </summary>
+    /// <param name="sv">La vue de scène à synchroniser.</param>
     static void CheckMe(SceneView sv)
     {
         if (Event.current.type != EventType.Layout)
             return;
         if (!Camera.main)
             return;
-        // Get a list of everything on the main camera that should be synced.
+        // Obtenez une liste de tous les éléments de l'appareil photo principal qui doivent être synchronisés.
         SceneViewFilter[] cameraFilters = Camera.main.GetComponents<SceneViewFilter>();
         SceneViewFilter[] sceneFilters = sv.camera.GetComponents<SceneViewFilter>();
 
-        // Let's see if the lists are different lengths or something like that. 
-        // If so, we simply destroy all scene filters and recreate from maincamera
+        // Voyons si les listes sont de longueurs différentes ou quelque chose comme ca.         
+        // Si c'est le cas, nous détruisons simplement tous les filtres de scène et nous les recréons à partir de maincamera
         if (cameraFilters.Length != sceneFilters.Length)
         {
             Recreate(sv);
@@ -47,8 +52,8 @@ public class SceneViewFilter : MonoBehaviour
             }
         }
 
-        // Ok, WHICH filters, or their order hasn't changed.
-        // Let's copy all settings for any filter that has changed.
+        // QUELS filtres, ou leur ordre n'a pas changé.
+        // Copie de tous les paramètres des filtres qui ont changé.
         for (int i = 0; i < cameraFilters.Length; i++)
             if (cameraFilters[i].hasChanged || sceneFilters[i].enabled != cameraFilters[i].enabled)
             {
@@ -57,6 +62,11 @@ public class SceneViewFilter : MonoBehaviour
             }
     }
 
+
+    /// <summary>
+    /// Méthode statique appelée pour recréer les filtres de la vue de scène en cas de besoin de synchronisation.
+    /// </summary>
+    /// <param name="sv">La vue de scène pour laquelle les filtres doivent être recréés.</param>
     static void Recreate(SceneView sv)
     {
         SceneViewFilter filter;
