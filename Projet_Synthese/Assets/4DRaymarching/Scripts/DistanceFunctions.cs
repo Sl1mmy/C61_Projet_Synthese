@@ -15,7 +15,7 @@ namespace Unity.Mathematics
         /// <param name="p">Le point dont on veut calculer la distance à la sphère.</param>
         /// <param name="s">Le rayon de la sphère.</param>
         /// <returns>La distance signée du point à la sphère.</returns>
-        float sdSphere(float3 p, float s)
+        public float sdSphere(float3 p, float s)
         {
             return length(p) - s;
         }
@@ -26,7 +26,7 @@ namespace Unity.Mathematics
         /// <param name="p">Le point dont on veut calculer la distance à la boîte.</param>
         /// <param name="s">Le vecteur représentant les demi-dimensions de la boîte (la moitié de la largeur, hauteur et profondeur).</param>
         /// <returns>La distance signée du point à la boîte.</returns>
-        float sdBox(float3 p, float3 s)
+        public float sdBox(float3 p, float3 s)
         {
             float3 q = abs(p) - s;
             return length(max(q, 0.0f)) + min(max(q.x, max(q.y, q.z)), 0.0f);
@@ -38,7 +38,7 @@ namespace Unity.Mathematics
         /// <param name="p">Le point dont on veut calculer la distance à l'hypersphère.</param>
         /// <param name="s">Le rayon de l'hypersphère.</param>
         /// <returns>La distance signée du point à l'hypersphère.</returns>
-        float sdHyperSphere(float4 p, float s)
+        public float sdHyperSphere(float4 p, float s)
         {
             return length(p) - s;
         }
@@ -49,7 +49,7 @@ namespace Unity.Mathematics
         /// <param name="p">Le point dont on veut calculer la distance à l'hypercube.</param>
         /// <param name="s">Le vecteur représentant les demi-dimensions de l'hypercube (la moitié de la largeur, hauteur, profondeur et dimension W).</param>
         /// <returns>La distance signée du point à l'hypercube.</returns>
-        float sdHyperCube(float4 p, float4 s)
+        public float sdHyperCube(float4 p, float4 s)
         {
             float4 q = abs(p) - s;
             return min(max(q.x, max(q.y, max(q.z, q.w))), 0.0f) + length(max(q, 0.0f));
@@ -62,7 +62,7 @@ namespace Unity.Mathematics
         /// <param name="h">La hauteur du duo-cylindre (dans l'espace XZ).</param>
         /// <param name="r">Le rayon du duo-cylindre (dans l'espace YW).</param>
         /// <returns>La distance signée du point au duo-cylindre.</returns>
-        float sdDuoCylinder(float4 p, float h, float r)
+        public float sdDuoCylinder(float4 p, float h, float r)
         {
             
             float2 d = abs(float2(length(p.xz), length(p.yw))) - float2(h, r);
@@ -75,7 +75,7 @@ namespace Unity.Mathematics
         /// <param name="p">Le point dont on veut calculer la distance à l'hypercone.</param>
         /// <param name="h">Le vecteur contenant les paramètres de l'hypercone : h.x est la hauteur, h.y est le rayon à la base.</param>
         /// <returns>La distance signée du point à l'hypercone.</returns>
-        float sdHyperCone(float4 p, float4 h) //TODO fix
+        public float sdHyperCone(float4 p, float4 h) //TODO fix
         {
             return max(length(p.xzw) - h.x, abs(p.y) - h.y) -(h.x * p.y);
         }
