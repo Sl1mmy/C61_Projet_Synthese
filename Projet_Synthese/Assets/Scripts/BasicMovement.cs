@@ -2,35 +2,42 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(CharacterController))]
 public class Movement : MonoBehaviour
 {
-    public float speed = 3;
-    public float rotationSpeed = 90;
-    public float gravity = -20f;
-    public float jumpSpeed = 15;
+    public float playerSpeed;
+    public float DeathDistance;
 
-    CharacterController characterController;
+    private Vector3 StartPos;
 
-    void Awake()
+
+    private void Start()
     {
-        characterController = GetComponent<CharacterController>();
+        StartPos = transform.position;
     }
 
+    // Update is called once per frame
     void Update()
     {
-        Vector3 direction = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")).normalized;
-        if (characterController.isGrounded)
+        if (transform.position.y < DeathDistance)
         {
-            transform.Translate(direction * Time.deltaTime * speed, Space.World);
+            transform.position = StartPos;
+        }
+        
+        MovePlayer();
+ 
+
+    }
+
+    void MovePlayer()
+    {
+
+        if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
+        {
+            Vector3 direction = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")).normalized;
+            transform.Translate(direction * Time.deltaTime * playerSpeed, Space.World);
             transform.LookAt(direction + transform.position);
         }
-        else
-        {
-            direction.y += gravity * Time.deltaTime;
-        }
-        //Adding gravity
-        characterController.Move(direction * Time.deltaTime * speed);
+
     }
 }
 

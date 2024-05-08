@@ -890,10 +890,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99e367099af54904cac02aeca11e4cf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 49.4
-  rotationSpeed: 90
-  gravity: -1000
-  jumpSpeed: 15
+  playerSpeed: 0
+  DeathDistance: 0
 --- !u!54 &1772616229
 Rigidbody:
   m_ObjectHideFlags: 0
