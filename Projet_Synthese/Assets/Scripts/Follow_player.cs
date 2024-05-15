@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Follow_player : MonoBehaviour
 {
+    [SerializeField]
+    Vector3 camPosition = new Vector3(-0.38f, 6.48f, -4);
 
     public Transform player;
     private Quaternion initialRotation;
@@ -17,7 +19,7 @@ public class Follow_player : MonoBehaviour
 
     void Update()
     {
-        transform.position = player.transform.position + new Vector3(-0.38f, 6.48f, -4);
+        transform.position = player.transform.position + camPosition;
         transform.rotation = initialRotation;
     }
 }

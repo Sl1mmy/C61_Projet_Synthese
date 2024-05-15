@@ -30,7 +30,17 @@ Shader "Raymarch/RaymarchShader"
             uniform float _maxIterations;
             uniform float _maxDistance;
             uniform float4 _sphere1;
-            uniform float3 _LightDir;
+
+            uniform int _useShadows;
+            uniform float _shadowSoftness;
+            uniform float _maxShadowDistance;
+            uniform float _shadowIntensity;
+            uniform float _aoIntensity;
+
+            uniform float3 _lightDir;
+            uniform fixed4 _skyColor;
+            uniform float3 _player;
+
 
 
             //Structure représentant une forme dans l'espace 4D pour le rendu de raymarching.
@@ -123,7 +133,7 @@ Shader "Raymarch/RaymarchShader"
             // en appliquant les transformations nécessaires et en combinant les distances de chaque forme.
             // position : La position du point dans l'espace 3D.
             // RETOURNE : La distance signée du point au champ de distance.
-            float distanceField(float3 position) 
+            float4 distanceField(float3 position) 
             {
                 float4 position4D = float4 (position, w);
                 if(length(_wRotation) != 0) 
@@ -167,16 +177,46 @@ Shader "Raymarch/RaymarchShader"
             // Calcule et retourne la normale d'un point sur une surface définie par un champ de distance, en utilisant une différence finie pour estimer la pente.
             // position : La position du point sur la surface.
             // RETOURNE : La normale de la surface au point spécifié.
-            float3 getNormal(float3 position) 
+            float3 getNormal(float3 p) 
             {
-                const float2 offset = float2(0.001, 0.0);
-                float3 n = float3(
-                    distanceField(position + offset.xyy) - distanceField(position - offset.xyy),
-                    distanceField(position + offset.yxy) - distanceField(position - offset.yxy),
-                    distanceField(position + offset.yyx) - distanceField(position - offset.yyx));
+                float d = distanceField(p).x;
+                const float2 e = float2(.01, 0);
+                float3 n = d - float3(distanceField(p - e.xyy).x,distanceField(p - e.yxy).x,distanceField(p - e.yyx).x);
                 return normalize(n);
             }
 
+            // hardshadow
+            float hardShadowCalc( in float3 ro, in float3 rd, float mint, float maxt) 
+            {
+                float res = 1.0;
+                for (float t = mint; t < maxt; ) 
+                {
+                    float h = min(distanceField(ro + rd*t).x, sdVerticalCapsule(ro + rd*t - _player, 1, 0.4));
+                    if (h < 0.001)
+                        return 0.0;
+                    t += h;
+                }
+                return res;
+            }
+
+            // softshadow
+            float softShadowCalc(in float3 ro, in float3 rd, float mint, float maxt, float k) 
+            {
+                float res = 1.0;
+                float ph = 1e20;
+                for(float t = mint; t < maxt; ) 
+                {
+                    float h = distanceField(ro + rd*t).x;
+                    if(h < 0.001)
+                        return 0.0;
+                    float y = h*h/(2.0 * ph);
+                    float d = sqrt(h*h-y*y);
+                    res = min(res, k*d/max(0.0, t-y));
+                    ph = h;
+                    t += h;
+                }
+                return res;
+            }
 
             // Effectue le raymarching le long d'un rayon donné depuis un point d'origine dans une direction donnée jusqu'à une certaine profondeur, en évaluant les distances de chaque itération pour déterminer les collisions et en appliquant le rendu en fonction.
             // rayOrigin : L'origine du rayon.
@@ -199,17 +239,43 @@ Shader "Raymarch/RaymarchShader"
 
                     float3 position = rayOrigin + rayDirection * t;
                     //verif pour hit
-                    float distance = distanceField(position);
-                    if (distance < 0.01) //hit
-                    { 
-                        //shading
-                        float3 n = getNormal(position);
-                        float light = dot(-_LightDir, n);
+                    float4 distance = distanceField(position);
 
-                        result = fixed4(fixed3(1,1,1) * light,1);
+                    if (distance.x < 0.001) //hit
+                    { 
+                        float3 colorDepth;
+                        float light;
+                        float shadow;
+                        //shading
+
+                        float3 color = distance.yzw;
+
+
+                        float3 n = getNormal(position);
+                        light = dot(- _lightDir, n);
+
+
+                        if(_useShadows == 1) 
+                        {
+                            shadow = (hardShadowCalc(position, - _lightDir, 0.1, _maxShadowDistance) * (1 - _shadowIntensity) + _shadowIntensity); //hard shadow
+                        }
+                        else if(_useShadows == 2) 
+                        {
+                            shadow = (softShadowCalc(position, - _lightDir, 0.1, _maxShadowDistance, _shadowSoftness) * (1 - _shadowIntensity) + _shadowIntensity); // soft shadow
+                        }
+                        else 
+                            shadow = 1;
+
+                        float ao = (1 - 2 * i / float(_maxIterations)) * (1 - _aoIntensity) + _aoIntensity;
+
+                        float3 colorLight = float3(color * light * shadow * ao);
+
+                        colorDepth = float3(colorLight * (_maxDistance - t) / (_maxDistance) + _skyColor.rgb * (t) / (_maxDistance));
+
+                        result = fixed4(fixed3(1,1,1) * colorLight, 1);
                         break;
                     }
-                    t += distance;
+                    t += distance.x;
                 }
 
                 return result;

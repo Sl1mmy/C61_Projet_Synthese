@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4417440172775549590
+--- !u!1 &6243256465094045326
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,26 +8,24 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3765755725885801288}
-  - component: {fileID: 7682337655801772011}
-  - component: {fileID: 2521808531073869947}
-  - component: {fileID: 3949712350926186624}
-  - component: {fileID: 1675194269022975250}
-  - component: {fileID: 3759679996864623959}
+  - component: {fileID: 7469895586846508502}
+  - component: {fileID: 8225767707375923589}
+  - component: {fileID: 5555635330426158707}
+  - component: {fileID: 6446917571332125614}
   m_Layer: 0
-  m_Name: 4Dcamera
+  m_Name: raymarch_cam
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3765755725885801288
+--- !u!4 &7469895586846508502
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4417440172775549590}
+  m_GameObject: {fileID: 6243256465094045326}
   m_LocalRotation: {x: 0.34529823, y: 0, z: 0, w: 0.938493}
   m_LocalPosition: {x: -0.38, y: 6.92, z: -19.11}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -36,13 +34,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 40.4, y: 0, z: 0}
---- !u!20 &7682337655801772011
+--- !u!20 &8225767707375923589
 Camera:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4417440172775549590}
+  m_GameObject: {fileID: 6243256465094045326}
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
@@ -87,21 +85,21 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &2521808531073869947
+--- !u!81 &5555635330426158707
 AudioListener:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4417440172775549590}
+  m_GameObject: {fileID: 6243256465094045326}
   m_Enabled: 1
---- !u!114 &3949712350926186624
+--- !u!114 &6446917571332125614
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4417440172775549590}
+  m_GameObject: {fileID: 6243256465094045326}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0dd7e5b11069e7948ad80c2b51ce3268, type: 3}
@@ -109,47 +107,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _shader: {fileID: 4800000, guid: faaefc078c295fa4ebf9e55640fb61e8, type: 3}
   _directionalLight: {fileID: 0}
-  _player: {fileID: 0}
   _maxDistance: 200
   _maxIterations: 200
-  _wPosition: 0
+  _wPosition: 0.07
   _wRotation: {x: 0, y: 0, z: 0}
-  _useShadows: 1
-  _useSoftShadows: 0
-  _shadowSoftness: 3
-  _maxShadowDistance: 45
-  _shadowIntensity: 0.559
-  _aoIntensity: 0
-  _skyColor: {r: 1, g: 1, b: 1, a: 0}
   orderedShapes:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
---- !u!114 &1675194269022975250
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4417440172775549590}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d04f13d66f58c2f4894815363393cabb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
---- !u!114 &3759679996864623959
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4417440172775549590}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac9e629a62f32d34e86ce9908624ab23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  slider: {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

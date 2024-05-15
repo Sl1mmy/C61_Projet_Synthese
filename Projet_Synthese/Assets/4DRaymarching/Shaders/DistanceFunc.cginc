@@ -45,6 +45,12 @@ float sdHyperCone(float4 p, float4 h)
 //    return 0.0f;
 //}
 
+// CAPSULE
+float sdVerticalCapsule(float3 p, float h, float r)
+{
+    p.y -= clamp(p.y, 0.0, h);
+    return length(p) - r;
+}
 
 //OPERATEURS BOOLEENS
 

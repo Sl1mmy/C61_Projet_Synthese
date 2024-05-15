@@ -54,6 +54,7 @@ public class RaymarchCam : SceneViewFilter
     private Camera _cam;
 
     public Transform _directionalLight;
+    public Transform _player;
 
     public float _maxDistance;
     public float _maxIterations;
@@ -61,6 +62,20 @@ public class RaymarchCam : SceneViewFilter
     [Header("4D transform")]
     public float _wPosition;
     public Vector3 _wRotation;
+
+    [Header("Visual Settings")]
+    public bool _useShadows;
+    public bool _useSoftShadows;
+    public float _shadowSoftness;
+    public float _maxShadowDistance;
+    [Range(0, 1)]
+    public float _shadowIntensity;
+
+    [Range(0, 1)]
+    public float _aoIntensity;
+    [Space(10)]
+    [Tooltip("The color of the depthbuffer")]
+    public Color _skyColor;
 
 
     [HideInInspector]
@@ -76,22 +91,13 @@ public class RaymarchCam : SceneViewFilter
     {
         buffersToDispose = new List<ComputeBuffer>();
         CreateScene();
+        InitParameters();
 
         if (!_raymarchMaterial)
         {
             Graphics.Blit(source, destination);
             return;
         }
-
-        _raymarchMaterial.SetVector("_LightDir", _directionalLight ? _directionalLight.forward : Vector3.down);
-        _raymarchMaterial.SetMatrix("_CamFrustum", CamFrustum(_camera));
-        _raymarchMaterial.SetMatrix("_CamToWorld", _camera.cameraToWorldMatrix);
-        _raymarchMaterial.SetFloat("_maxDistance", _maxDistance);
-        _raymarchMaterial.SetFloat("_maxIterations", _maxIterations);
-
-        _raymarchMaterial.SetVector("_wRotation", _wRotation * Mathf.Deg2Rad);
-        _raymarchMaterial.SetFloat("w", _wPosition);
-
 
         RenderTexture.active = destination;
         _raymarchMat.SetTexture("_MainTex", source);
@@ -123,6 +129,37 @@ public class RaymarchCam : SceneViewFilter
         {
             buffer.Dispose();
         }
+    }
+
+    private void InitParameters()
+    {
+        if (_useShadows)
+        {
+            _raymarchMaterial.SetInt("_useShadows", 1);
+            if (_useSoftShadows)
+            {
+                _raymarchMaterial.SetInt("_useShadows", 2);
+                _raymarchMaterial.SetFloat("_shadowSoftness", _shadowSoftness);
+            }
+        }
+        else _raymarchMaterial.SetInt("_useShadows", 0);
+
+        _raymarchMaterial.SetFloat("_maxShadowDistance", _maxShadowDistance);
+        _raymarchMaterial.SetFloat("_shadowIntensity", _shadowIntensity);
+
+        _raymarchMaterial.SetVector("_lightDir", _directionalLight ? _directionalLight.forward : Vector3.down);
+        _raymarchMaterial.SetColor("_skyColor", _skyColor);
+        _raymarchMaterial.SetFloat("_aoIntensity", _aoIntensity);
+
+        _raymarchMaterial.SetMatrix("_CamFrustum", CamFrustum(_camera));
+        _raymarchMaterial.SetMatrix("_CamToWorld", _camera.cameraToWorldMatrix);
+        _raymarchMaterial.SetFloat("_maxDistance", _maxDistance);
+        _raymarchMaterial.SetFloat("_maxIterations", _maxIterations);
+
+        _raymarchMaterial.SetVector("_player", _player ? _player.position : Vector3.zero);
+
+        _raymarchMaterial.SetVector("_wRotation", _wRotation * Mathf.Deg2Rad);
+        _raymarchMaterial.SetFloat("w", _wPosition);
     }
 
     /// <summary>
