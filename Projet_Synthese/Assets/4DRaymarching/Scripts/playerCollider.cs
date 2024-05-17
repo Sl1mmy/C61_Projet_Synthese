@@ -116,9 +116,9 @@ namespace Unity.Mathematics
 
                 if (d < 0) //collision
                 {
-                    Debug.Log("hit" + i);
                     nrHits++;
                     //collision
+                    print(ro[i].name);
                     transform.Translate(ro[i].forward * d * 1.5f, Space.World);
                 }
             }

@@ -139,6 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d04f13d66f58c2f4894815363393cabb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camPosition: {x: 4.61, y: 9, z: -7.03}
   player: {fileID: 0}
 --- !u!114 &3759679996864623959
 MonoBehaviour:
@@ -152,4 +153,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac9e629a62f32d34e86ce9908624ab23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sensitivity: 0.5
   slider: {fileID: 0}

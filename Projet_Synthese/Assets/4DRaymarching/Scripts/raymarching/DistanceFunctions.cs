@@ -80,11 +80,12 @@ namespace Unity.Mathematics
             return max(length(p.xzw) - h.x, abs(p.y) - h.y) -(h.x * p.y);
         }
 
-        // HYPERPLANE
-        //float sdHyperPlane(float4 p, float4 s) 
-        //{ 
-        //    return 0.0f;
-        //}
+        public float sdHyperPlane(float4 p, float4 s)
+        {
+
+            float plane = dot(p, normalize(float4(0, 1, 0, 0))) - (sin(p.x * s.x + p.w) + sin(p.z * s.z) + sin((p.x * 0.34f + p.z * 0.21f) * s.w)) / s.y;
+            return plane;
+        }
 
 
         //------ OPERATION BOOLEENS -------------------------------------------//

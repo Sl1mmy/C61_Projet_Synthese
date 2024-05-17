@@ -117,8 +117,8 @@ Shader "Raymarch/RaymarchShader"
                         return sdDuoCylinder(position4D, shape.scale.x, shape.scale.y);
                     case 3: //cone
                         return sdHyperCone(position4D, shape.scale);
-                    //case 4:
-                    //    return 0;
+                    case 4: //Hyperplane
+                        return sdHyperPlane(position4D, shape.scale);
                     //case 5:
                     //    return 0;
                     //case 6:
