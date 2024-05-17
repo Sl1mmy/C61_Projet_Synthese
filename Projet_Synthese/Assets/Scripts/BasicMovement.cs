@@ -7,11 +7,13 @@ public class Movement : MonoBehaviour
     public float playerSpeed;
     public float DeathDistance;
 
+    private Animator anim;
     private Vector3 StartPos;
 
 
     private void Start()
     {
+        anim = GetComponent<Animator>();
         StartPos = transform.position;
     }
 
@@ -24,8 +26,6 @@ public class Movement : MonoBehaviour
         }
         
         MovePlayer();
- 
-
     }
 
     void MovePlayer()
