@@ -1136,7 +1136,7 @@ Transform:
   - {fileID: 9167864777987795657}
   - {fileID: 2437680638383968297}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8056628410889255045
 MonoBehaviour:
@@ -1230,7 +1230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Velocity: 10
-  DeathDistance: 0
+  DeathDistance: -10
   StartPos: {x: 0, y: 0, z: 0}
   InputX: 0
   InputZ: 0

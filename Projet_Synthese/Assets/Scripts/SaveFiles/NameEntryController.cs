@@ -14,6 +14,7 @@ public class NameEntryController : MonoBehaviour
         if (!string.IsNullOrEmpty(playerName))
         {
             int selectedSlot = PlayerPrefs.GetInt("SelectedSaveSlot");
+            PlayerPrefs.SetString("CurrentPlayerName", playerName);
             saveSystem.SaveGame(selectedSlot, playerName, 0);
         }
     }
