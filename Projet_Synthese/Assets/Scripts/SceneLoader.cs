@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Charge différentes scènes du jeu.
+/// Auteur(s): Maxime
 /// </summary>
 public class SceneLoader : MonoBehaviour
 {

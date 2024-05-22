@@ -8,6 +8,7 @@ namespace Unity.Mathematics
 
     /// <summary>
     /// Gère la détection de collision d'un joueur dans un environnement en utilisant un champ de distance et la marche de rayons.
+    /// Auteur(s): Noé
     /// </summary>
     public class playerCollider : MonoBehaviour
     {

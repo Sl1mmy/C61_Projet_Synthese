@@ -4,6 +4,7 @@ using UnityEngine;
 
 /// <summary>
 /// Gère la réapparition de l'objet lorsque sa position descend en dessous d'un certain seuil.
+/// Auteur(s): Maxime
 /// </summary>
 public class Respawn : MonoBehaviour
 {

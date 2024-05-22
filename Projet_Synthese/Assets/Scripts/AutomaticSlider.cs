@@ -6,6 +6,7 @@ using UnityEngine;
 
 /// <summary>
 /// Contrôle automatique du déplacement d'un curseur (Slider) de l'interface utilisateur.
+/// Auteur(s): Noé
 /// </summary>
 public class AutomaticSlider : MonoBehaviour
 {

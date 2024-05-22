@@ -9,6 +9,7 @@ using UnityEngine.Networking;
 
 /// <summary>
 /// Gère l'ouverture et l'affichage d'une image.
+/// Auteur(s): Maxime
 /// </summary>
 public class OpenImageplz : MonoBehaviour
 {

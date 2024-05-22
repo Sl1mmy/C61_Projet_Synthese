@@ -4,6 +4,7 @@ using UnityEngine;
 
 /// <summary>
 /// Contrôle la rotation de la caméra autour d'un point cible.
+/// Auteur(s): Noé
 /// </summary>
 public class CamRotate : MonoBehaviour
 {

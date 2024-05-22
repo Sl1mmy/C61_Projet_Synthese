@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Gère la fonctionnalité de "drag" pour un curseur UI Slider, permettant de déplacer les objets dans l'espace 4D.
+/// Auteur(s): Maxime
+/// </summary>
 public class PickupSlider : MonoBehaviour
 {
     private shape4d object4d;

@@ -5,6 +5,7 @@ using TMPro;
 
 /// <summary>
 /// Contrôle le fonctionnement du jeu, y compris la gestion des sauvegardes et l'affichage des données de sauvegarde.
+/// Auteur(s): Noé
 /// </summary>
 public class GameController : MonoBehaviour
 {

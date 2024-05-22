@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using static Unity.Mathematics.math;
 
+
+/// <summary>
+/// Calcule les différentes fonctions.
+/// Auteur(s): Noé
+/// </summary>
 // shapes adapté des fonctions 3D provenant de https://iquilezles.org/articles/distfunctions/
 namespace Unity.Mathematics
 {

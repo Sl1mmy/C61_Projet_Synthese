@@ -5,6 +5,7 @@ using UnityEngine;
 
 /// <summary>
 /// Système de sauvegarde pour sauvegarder et charger les données du joueur.
+/// Auteur(s): Noé
 /// </summary>
 public class SaveSystem
 {

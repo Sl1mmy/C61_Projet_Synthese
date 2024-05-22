@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Gère la fin d'un niveau et le chargement du niveau suivant.
+/// Auteur(s): Maxime
 /// </summary>
 public class vaisseaufinish : MonoBehaviour
 {

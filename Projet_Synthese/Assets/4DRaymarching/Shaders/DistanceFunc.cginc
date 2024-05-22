@@ -1,3 +1,5 @@
+// shapes adapté des fonctions 3D provenant de https://iquilezles.org/articles/distfunctions/
+
 // SPHERE
 // s : radius
 float sdSphere(float3 p, float s)

@@ -1,13 +1,14 @@
 
-using System.Collections;
-using System.Collections.Generic;
-using System.Dynamic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-//This script requires you to have setup your animator with 3 parameters, "InputMagnitude", "InputX", "InputZ"
-//With a blend tree to control the inputmagnitude and allow blending between animations.
+
 [RequireComponent(typeof(CharacterController))]
+
+/// <summary>
+/// Gère le mouvement du joueur en fonction des entrées clavier et de la rotation de la caméra.
+/// Auteur(s): Maxime, Noé
+/// </summary>
 public class MovementInput : MonoBehaviour {
 
     public float Velocity;
@@ -37,13 +38,12 @@ public class MovementInput : MonoBehaviour {
 
     private Vector3 moveVector;
 
-	// Use this for initialization
+
 	void Start () {
 		anim = this.GetComponent<Animator> ();
 		cam = Camera.main;
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
         if (transform.position.y < DeathDistance)
         {
@@ -53,6 +53,9 @@ public class MovementInput : MonoBehaviour {
         InputMagnitude ();
     }
 
+    /// <summary>
+    /// Déplace le joueur et gère sa rotation en fonction des entrées clavier.
+    /// </summary>
     void PlayerMoveAndRotation() {
 		InputX = Input.GetAxis ("Horizontal");
 		InputZ = Input.GetAxis ("Vertical");
@@ -74,11 +77,19 @@ public class MovementInput : MonoBehaviour {
         }
 	}
 
+    /// <summary>
+    /// Fait tourner le joueur pour regarder une position spécifique.
+    /// </summary>
+    /// <param name="pos">La position à regarder.</param>
     public void LookAt(Vector3 pos)
     {
         transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(pos), desiredRotationSpeed);
     }
 
+    /// <summary>
+    /// Fait tourner le joueur pour regarder dans la direction de la caméra.
+    /// </summary>
+    /// <param name="t">La transformée de la caméra.</param>
     public void RotateToCamera(Transform t)
     {
 
@@ -91,18 +102,15 @@ public class MovementInput : MonoBehaviour {
         t.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(desiredMoveDirection), desiredRotationSpeed);
     }
 
-	void InputMagnitude() {
-		//Calculate Input Vectors
+    /// <summary>
+    /// Gère l'ampleur de l'entrée utilisateur et le mouvement du joueur.
+    /// </summary>
+    void InputMagnitude() {
 		InputX = Input.GetAxis ("Horizontal");
 		InputZ = Input.GetAxis ("Vertical");
 
-		//anim.SetFloat ("InputZ", InputZ, VerticalAnimTime, Time.deltaTime * 2f);
-		//anim.SetFloat ("InputX", InputX, HorizontalAnimSmoothTime, Time.deltaTime * 2f);
-
-		//Calculate the Input Magnitude
 		Speed = new Vector2(InputX, InputZ).sqrMagnitude;
 
-        //Physically move player
 
 		if (Speed > allowPlayerRotation) {
 			anim.SetFloat ("Blend", Speed, StartAnimTime, Time.deltaTime);

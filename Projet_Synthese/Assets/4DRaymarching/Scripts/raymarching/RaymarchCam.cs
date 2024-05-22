@@ -6,6 +6,7 @@ using UnityEngine;
 /// <summary>
 /// Classe gérant le rendu par raymarching dans la vue de scène Unity, 
 /// en utilisant les objets shape4d pour générer la scène.
+/// Auteur(s): Noé
 /// </summary>
 [RequireComponent(typeof(Camera))]
 [ExecuteInEditMode]

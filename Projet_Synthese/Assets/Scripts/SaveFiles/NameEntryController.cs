@@ -3,6 +3,10 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 
+/// <summary>
+/// Contrôleur pour la saisie du nom du joueur.
+/// Auteur(s): Maxime
+/// </summary>
 public class NameEntryController : MonoBehaviour
 {
     public TMP_InputField playerNameInput;

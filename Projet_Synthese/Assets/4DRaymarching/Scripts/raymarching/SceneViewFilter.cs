@@ -6,6 +6,7 @@ using UnityEditor;
 /// <summary>
 /// Classe de base pour les filtres de la vue de scène Unity, 
 /// permettant de synchroniser les paramètres entre la vue de scène et la caméra principale.
+/// Auteur(s): Noé
 /// </summary>
 public class SceneViewFilter : MonoBehaviour
 {

@@ -5,6 +5,7 @@ using UnityEngine;
 
 /// <summary>
 /// Permet à la caméra de suivre le joueur en maintenant une position relative fixe.
+/// Auteur(s): Maxime
 /// </summary>
 public class Follow_player : MonoBehaviour
 {

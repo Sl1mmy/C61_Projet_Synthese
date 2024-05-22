@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Gère le menu de pause du jeu.
+/// Auteur(s): Maxime
 /// </summary>
 public class PauseMenu : MonoBehaviour
 {

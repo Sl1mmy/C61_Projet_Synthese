@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Gère le déplacement d'un curseur à l'aide d'un slider et ajuste la position d'une caméra de raymarching en fonction de la valeur du curseur.
+/// Auteur(s): Maxime
+/// </summary>
 public class Slider : MonoBehaviour
 {
     private RaymarchCam cam;

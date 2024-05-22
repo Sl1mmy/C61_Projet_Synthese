@@ -4,6 +4,7 @@ using UnityEngine;
 
 /// <summary>
 /// Classe représentant une forme dans un espace 4D, utilisée pour le rendu par raymarching.
+/// Auteur(s): Noé
 /// </summary>
 public class shape4d : MonoBehaviour
 {
