@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// Charge différentes scènes du jeu.
+/// </summary>
 public class SceneLoader : MonoBehaviour
 {
     public void LoadNewGame()

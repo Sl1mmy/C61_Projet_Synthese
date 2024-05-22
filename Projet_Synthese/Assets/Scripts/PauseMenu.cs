@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
+/// <summary>
+/// Gère le menu de pause du jeu.
+/// </summary>
 public class PauseMenu : MonoBehaviour
 {
     public GameObject PausePanel;

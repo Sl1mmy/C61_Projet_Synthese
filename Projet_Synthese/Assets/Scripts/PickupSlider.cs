@@ -37,28 +37,20 @@ public class PickupSlider : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     private void OnSliderValueChanged(float newValue)
     {
-        // Calculate the change in value
         float delta = newValue - previousValue;
 
-        // Adjust the value change speed
         float adjustedDelta = delta * sensitivity;
 
-        // Remove the listener to prevent recursion
         slider.onValueChanged.RemoveListener(OnSliderValueChanged);
 
-        // Update the slider value
         slider.value = previousValue + adjustedDelta;
 
-        // Set the cam _wPosition
         object4d.positionW = slider.value;
 
-        // Re-add the listener
         slider.onValueChanged.AddListener(OnSliderValueChanged);
 
-        // Update the previous value for the next iteration
         previousValue = slider.value;
     }
 }

@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Gère la réapparition de l'objet lorsque sa position descend en dessous d'un certain seuil.
+/// </summary>
 public class Respawn : MonoBehaviour
 {
     [SerializeField]

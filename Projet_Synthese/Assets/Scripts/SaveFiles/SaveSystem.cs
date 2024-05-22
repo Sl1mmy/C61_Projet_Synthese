@@ -2,11 +2,20 @@ using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 
+
+/// <summary>
+/// Système de sauvegarde pour sauvegarder et charger les données du joueur.
+/// </summary>
 public class SaveSystem
 {
     private const int MaxSaveFiles = 3;
 
-    // Save the game data to a specified slot (1, 2, or 3)
+    /// <summary>
+    /// Sauvegarde les données de jeu dans un emplacement spécifié (1, 2 ou 3).
+    /// </summary>
+    /// <param name="slot">L'emplacement de sauvegarde.</param>
+    /// <param name="playerName">Le nom du joueur.</param>
+    /// <param name="levelsCompleted">Le nombre de niveaux terminés par le joueur.</param>
     public void SaveGame(int slot, string playerName, int levelsCompleted)
     {
         if (slot < 1 || slot > MaxSaveFiles)
@@ -22,7 +31,11 @@ public class SaveSystem
         file.Close();
     }
 
-    // Load the game data from a specified slot (1, 2, or 3)
+    /// <summary>
+    /// Charge les données de jeu depuis un emplacement spécifié (1, 2 ou 3).
+    /// </summary>
+    /// <param name="slot">L'emplacement de sauvegarde.</param>
+    /// <returns>Les données du joueur chargées.</returns>
     public PlayerData LoadGame(int slot)
     {
         if (slot < 1 || slot > MaxSaveFiles)
@@ -46,6 +59,10 @@ public class SaveSystem
         }
     }
 
+    /// <summary>
+    /// Supprime le fichier de sauvegarde pour un emplacement spécifié (1, 2 ou 3).
+    /// </summary>
+    /// <param name="slot">L'emplacement de sauvegarde à supprimer.</param>
     public void DeleteSave(int slot)
     {
         if (slot < 1 || slot > MaxSaveFiles)
@@ -67,7 +84,7 @@ public class SaveSystem
     }
 
 
-    // Get the file path for a specific save slot
+    // Obtient le chemin du fichier pour un emplacement de sauvegarde spécifique
     private string GetFilePath(int slot)
     {
         return Application.persistentDataPath + "/playerData" + slot + ".dat";

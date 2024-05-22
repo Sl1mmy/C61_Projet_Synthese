@@ -185,7 +185,12 @@ Shader "Raymarch/RaymarchShader"
                 return normalize(n);
             }
 
-            // hardshadow
+            // Calcule l'ombre dure (hardshadow) en utilisant le ray marching.
+            // ro : Le point d'origine du rayon (vecteur 3D).
+            // rd : La direction du rayon (vecteur 3D).
+            // mint : La distance minimale pour commencer à vérifier les intersections.
+            // maxt : La distance maximale pour vérifier les intersections.
+            // RETOURNE: 1.0 si le point n'est pas dans l'ombre, 0.0 si le point est dans l'ombre.
             float hardShadowCalc( in float3 ro, in float3 rd, float mint, float maxt) 
             {
                 float res = 1.0;
@@ -199,7 +204,13 @@ Shader "Raymarch/RaymarchShader"
                 return res;
             }
 
-            // softshadow
+            // Calcule l'ombre douce en utilisant le ray marching.
+            // ro : Le point d'origine du rayon (vecteur 3D).
+            // rd : La direction du rayon (vecteur 3D).
+            // mint : La distance minimale pour commencer à vérifier les intersections.
+            // maxt : La distance maximale pour vérifier les intersections.
+            // k : Un facteur de lissage pour l'ombre douce.
+            // RETOURNE: Un facteur d'ombre douce entre 0.0 (ombre complète) et 1.0 (pas d'ombre).
             float softShadowCalc(in float3 ro, in float3 rd, float mint, float maxt, float k) 
             {
                 float res = 1.0;

@@ -5,6 +5,10 @@ using UnityEngine;
 
 namespace Unity.Mathematics
 {
+
+    /// <summary>
+    /// Gère la détection de collision d'un joueur dans un environnement en utilisant un champ de distance et la marche de rayons.
+    /// </summary>
     public class playerCollider : MonoBehaviour
     {
 
@@ -17,20 +21,24 @@ namespace Unity.Mathematics
         private RaymarchCam camScript;
 
 
-        // Start is called before the first frame update
         void Start()
         {
             camScript = Camera.main.GetComponent<RaymarchCam>();
             Df = GetComponent<DistanceFunctions>();
         }
 
-        // Update is called once per frame
         void Update()
         {
             MoveToGround();
             RayMarch(rayMarchTransforms);
         }
 
+        /// <summary>
+        /// Calcule la distance entre un point dans un espace 4D et une forme spécifiée.
+        /// </summary>
+        /// <param name="shape">La forme 4D pour laquelle mesurer la distance.</param>
+        /// <param name="p4D">Le point dans l'espace 4D à partir duquel la distance est mesurée.</param>
+        /// <returns>La distance entre le point et la forme.</returns>
         public float GetShapeDistance(shape4d shape, float4 p4D)
         {
             p4D -= (float4)shape.Position();
@@ -64,6 +72,11 @@ namespace Unity.Mathematics
             return Camera.main.farClipPlane;
         }
 
+        /// <summary>
+        /// Calcule la distance d'un point à partir du champ de distance.
+        /// </summary>
+        /// <param name="position">La position du point dans l'espace 3D.</param>
+        /// <returns>La distance du point au champ de distance.</returns>
         public float DistanceField(float3 position)
         {
             float4 p4D = float4(position, camScript._wPosition);
@@ -103,6 +116,10 @@ namespace Unity.Mathematics
             return globalDst;
         }
 
+        /// <summary>
+        /// Effectue une marche de rayon pour détecter les collisions avec les objets spécifiés.
+        /// </summary>
+        /// <param name="ro">Un tableau de transformations représentant les positions à vérifier pour les collisions.</param>
         void RayMarch(Transform[] ro)
         {
 
@@ -123,6 +140,10 @@ namespace Unity.Mathematics
                 }
             }
         }
+
+        /// <summary>
+        /// Déplace l'objet vers le sol en détectant les collisions.
+        /// </summary>
         void MoveToGround()
         {
             Vector3 p = transform.position;

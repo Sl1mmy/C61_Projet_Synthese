@@ -3,6 +3,9 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 
+/// <summary>
+/// Contrôle le fonctionnement du jeu, y compris la gestion des sauvegardes et l'affichage des données de sauvegarde.
+/// </summary>
 public class GameController : MonoBehaviour
 {
     private SaveSystem saveSystem = new SaveSystem();
@@ -20,6 +23,9 @@ public class GameController : MonoBehaviour
         LoadAndDisplaySaves();
     }
 
+    /// <summary>
+    /// Charge et affiche les données de sauvegarde.
+    /// </summary>
     void LoadAndDisplaySaves()
     {
         DisplaySaveData(1, saveSlot1Text, deleteSlot1Button);
@@ -27,6 +33,13 @@ public class GameController : MonoBehaviour
         DisplaySaveData(3, saveSlot3Text, deleteSlot3Button);
     }
 
+
+    /// <summary>
+    /// Affiche les données de sauvegarde pour un emplacement spécifié.
+    /// </summary>
+    /// <param name="slot">L'emplacement de sauvegarde.</param>
+    /// <param name="slotText">Le composant TextMeshProUGUI pour afficher les données de sauvegarde.</param>
+    /// <param name="deleteButton">Le bouton pour supprimer la sauvegarde.</param>
     void DisplaySaveData(int slot, TextMeshProUGUI slotText, Button deleteButton)
     {
         PlayerData data = saveSystem.LoadGame(slot);
@@ -42,6 +55,10 @@ public class GameController : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Appelée lorsqu'un emplacement de sauvegarde est cliqué.
+    /// </summary>
+    /// <param name="slot">L'emplacement de sauvegarde cliqué.</param>
     public void OnSaveSlotClicked(int slot)
     {
         PlayerData data = saveSystem.LoadGame(slot);
@@ -57,6 +74,11 @@ public class GameController : MonoBehaviour
         }
     }
 
+
+    /// <summary>
+    /// Supprime le fichier de sauvegarde pour un emplacement spécifié.
+    /// </summary>
+    /// <param name="slot">L'emplacement de sauvegarde à supprimer.</param>
     public void DeleteSaveFile(int slot)
     {
         saveSystem.DeleteSave(slot);

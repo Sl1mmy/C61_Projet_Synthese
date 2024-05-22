@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/// <summary>
+/// Permet à la caméra de suivre le joueur en maintenant une position relative fixe.
+/// </summary>
 public class Follow_player : MonoBehaviour
 {
     [SerializeField]

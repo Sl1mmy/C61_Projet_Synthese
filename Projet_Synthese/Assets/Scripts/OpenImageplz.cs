@@ -6,6 +6,10 @@ using UnityEditor;
 using System.IO;
 using UnityEngine.Networking;
 
+
+/// <summary>
+/// Gère l'ouverture et l'affichage d'une image.
+/// </summary>
 public class OpenImageplz : MonoBehaviour
 {
     public Image displayImage;

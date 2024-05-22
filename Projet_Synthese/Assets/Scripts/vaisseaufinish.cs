@@ -4,6 +4,10 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 
+
+/// <summary>
+/// Gère la fin d'un niveau et le chargement du niveau suivant.
+/// </summary>
 public class vaisseaufinish : MonoBehaviour
 {
     public enum LevelNames { _lvl1, _lvl2, _lvl3, _lvl4, _lvl5, _lvl6 }
@@ -22,6 +26,10 @@ public class vaisseaufinish : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Sauvegarde le niveau actuel dans le système de sauvegarde du jeu.
+    /// </summary>
+    /// <param name="currentLevel">Le niveau actuel.</param>
     private void SaveGame(int currentLevel)
     {
         int selectedSlot = PlayerPrefs.GetInt("SelectedSaveSlot");
