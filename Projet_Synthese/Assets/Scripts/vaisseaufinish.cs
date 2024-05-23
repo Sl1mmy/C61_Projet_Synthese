@@ -11,7 +11,7 @@ using UnityEngine.SceneManagement;
 /// </summary>
 public class vaisseaufinish : MonoBehaviour
 {
-    public enum LevelNames { _lvl1, _lvl2, _lvl3, _lvl4, _lvl5, _lvl6 }
+    public enum LevelNames { _lvl1, _lvl2, _lvl3, _lvl4, _lvl5, _lvl6, End }
 
     public LevelNames nextLevel;
     public int currentLevel = 0;
