@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 
 /// <summary>
@@ -18,9 +19,12 @@ public class vaisseaufinish : MonoBehaviour
     public float liftOffSpeed = 5f;
     public float liftOffDuration = 2f;
     public float waitBeforeLiftOff = 1f;
+    public Animator fadeAnimator;
+    public Image black;
 
     private SaveSystem saveSystem = new SaveSystem();
     private bool isLiftOff = false;
+
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -28,15 +32,19 @@ public class vaisseaufinish : MonoBehaviour
         {
             isLiftOff = true;
             SaveGame(currentLevel);
-            StartCoroutine(LiftOffAndLoadNextLevel(collision.gameObject));
+            StartCoroutine(LiftOffAndFade(collision.gameObject));
         }
     }
 
-    private IEnumerator LiftOffAndLoadNextLevel(GameObject player)
+    private IEnumerator LiftOffAndFade(GameObject player)
     {
-
         player.SetActive(false);
         yield return new WaitForSeconds(waitBeforeLiftOff);
+
+        // Démarre l'animation de fondu
+        StartCoroutine(Fade());
+
+        // Commence le décollage du vaisseau
         float elapsedTime = 0f;
         Vector3 initialPosition = transform.position;
 
@@ -47,7 +55,17 @@ public class vaisseaufinish : MonoBehaviour
             yield return null;
         }
 
+        // Attend que le fondu soit complet avant de charger la nouvelle scène
+        yield return new WaitUntil(() => black.color.a == 1);
         SceneManager.LoadScene(nextLevel.ToString());
+    }
+
+    private IEnumerator Fade()
+    {
+        fadeAnimator.SetBool("Fade", true);
+
+        // Attend que le fondu soit complet
+        yield return new WaitUntil(() => black.color.a == 1);
     }
 
     /// <summary>

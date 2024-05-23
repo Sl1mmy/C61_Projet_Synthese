@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/UI_scenes/CreateFile.unity
     guid: c02b93dd5ab3a434a88a24355c12a993
   - enabled: 1
+    path: Assets/4DRaymarching/Scenes/DEMO.unity
+    guid: 10818e05b2a54cb418728d6af85ced2e
+  - enabled: 1
     path: Assets/Scenes/_lvl1.unity
     guid: 1eb3c12c9c3d7e645a1a3e45e75f0d2f
   - enabled: 1

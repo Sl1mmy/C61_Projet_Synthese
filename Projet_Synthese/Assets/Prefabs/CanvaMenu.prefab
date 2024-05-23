@@ -253,6 +253,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PausePanel: {fileID: 189017565273224718}
   PlayerButton: {fileID: 0}
+  fadeAnimator: {fileID: 0}
+  black: {fileID: 0}
 --- !u!1 &540121122520431457
 GameObject:
   m_ObjectHideFlags: 0
@@ -555,7 +557,7 @@ RectTransform:
   m_Children:
   - {fileID: 2052182007165724688}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -906,7 +908,6 @@ GameObject:
   - component: {fileID: 5805893862127367901}
   - component: {fileID: 5473653254326627367}
   - component: {fileID: 2785516299172484854}
-  - component: {fileID: 6122295415874555007}
   m_Layer: 5
   m_Name: Quit
   m_TagString: Untagged
@@ -1017,9 +1018,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6122295415874555007}
-        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
-        m_MethodName: LoadMenu
+      - m_Target: {fileID: 7527064136574407183}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: LoadQuit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1029,18 +1030,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &6122295415874555007
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8320595542949695185}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 670d5868f59e974408f2ffaea076989b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8576429806766202162
 GameObject:
   m_ObjectHideFlags: 0
