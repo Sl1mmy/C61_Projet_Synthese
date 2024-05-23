@@ -15,6 +15,10 @@ public class GameController : MonoBehaviour
     public TextMeshProUGUI saveSlot2Text;
     public TextMeshProUGUI saveSlot3Text;
 
+    public TextMeshProUGUI saveSlot1Levels;
+    public TextMeshProUGUI saveSlot2Levels;
+    public TextMeshProUGUI saveSlot3Levels;
+
     public Button deleteSlot1Button;
     public Button deleteSlot2Button;
     public Button deleteSlot3Button;
@@ -29,9 +33,9 @@ public class GameController : MonoBehaviour
     /// </summary>
     void LoadAndDisplaySaves()
     {
-        DisplaySaveData(1, saveSlot1Text, deleteSlot1Button);
-        DisplaySaveData(2, saveSlot2Text, deleteSlot2Button);
-        DisplaySaveData(3, saveSlot3Text, deleteSlot3Button);
+        DisplaySaveData(1, saveSlot1Text, saveSlot1Levels, deleteSlot1Button);
+        DisplaySaveData(2, saveSlot2Text, saveSlot2Levels, deleteSlot2Button);
+        DisplaySaveData(3, saveSlot3Text, saveSlot3Levels, deleteSlot3Button);
     }
 
 
@@ -39,19 +43,22 @@ public class GameController : MonoBehaviour
     /// Affiche les données de sauvegarde pour un emplacement spécifié.
     /// </summary>
     /// <param name="slot">L'emplacement de sauvegarde.</param>
-    /// <param name="slotText">Le composant TextMeshProUGUI pour afficher les données de sauvegarde.</param>
+    /// <param name="slotText">Le composant TextMeshProUGUI pour afficher le nom du joueur.</param>
+    /// <param name="slotLevel">Le composant TextMeshProUGUI pour afficher les niveaux complétés.</param>
     /// <param name="deleteButton">Le bouton pour supprimer la sauvegarde.</param>
-    void DisplaySaveData(int slot, TextMeshProUGUI slotText, Button deleteButton)
+    void DisplaySaveData(int slot, TextMeshProUGUI slotText, TextMeshProUGUI slotLevel, Button deleteButton)
     {
         PlayerData data = saveSystem.LoadGame(slot);
         if (data != null)
         {
             slotText.text = data.playerName;
+            slotLevel.text = data.levelCompleted + "/6";
             deleteButton.interactable = true;
         }
         else
         {
             slotText.text = "Empty Slot";
+            slotLevel.text = "?";
             deleteButton.interactable = false;
         }
     }
@@ -83,7 +90,7 @@ public class GameController : MonoBehaviour
     public void DeleteSaveFile(int slot)
     {
         saveSystem.DeleteSave(slot);
-        DisplaySaveData(slot, GetSlotTextComponent(slot), GetDeleteButtonComponent(slot));
+        DisplaySaveData(slot, GetSlotTextComponent(slot), GetSlotLevelsComponent(slot), GetDeleteButtonComponent(slot));
     }
 
     private TextMeshProUGUI GetSlotTextComponent(int slot)
@@ -93,6 +100,17 @@ public class GameController : MonoBehaviour
             case 1: return saveSlot1Text;
             case 2: return saveSlot2Text;
             case 3: return saveSlot3Text;
+            default: return null;
+        }
+    }
+
+    private TextMeshProUGUI GetSlotLevelsComponent(int slot)
+    {
+        switch (slot)
+        {
+            case 1: return saveSlot1Levels;
+            case 2: return saveSlot2Levels;
+            case 3: return saveSlot3Levels;
             default: return null;
         }
     }

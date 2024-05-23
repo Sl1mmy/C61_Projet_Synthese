@@ -152,7 +152,6 @@ namespace Unity.Mathematics
 
             float d = DistanceField(p);
             d = Mathf.Min(d, maxDownMovement);
-            Debug.Log(d);
             transform.Translate(Vector3.down * d, Space.World);
         }
     }
