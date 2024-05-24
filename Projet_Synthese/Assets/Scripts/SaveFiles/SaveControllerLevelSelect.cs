@@ -20,7 +20,6 @@ public class SaveControllerLevelSelect : MonoBehaviour
 
     void DisableLevels(int levelCompleted)
     {
-        Button lastEnabledButton = null;
         for (int i = 0; i < levelButtons.Length; i++)
         {
             if (i > levelCompleted)
@@ -30,16 +29,14 @@ public class SaveControllerLevelSelect : MonoBehaviour
             else
             {
                 levelButtons[i].interactable = true;
-                lastEnabledButton = levelButtons[i];
+
             }
         }
-        if (lastEnabledButton != null)
+        if (levelButtons[levelCompleted] != null)
         {
-            ColorBlock colorBlock = lastEnabledButton.colors;
+            ColorBlock colorBlock = levelButtons[levelCompleted].colors;
             colorBlock.normalColor = new Color32(208, 136, 255, 255);
-            print(colorBlock.normalColor);
-            print(lastEnabledButton.colors.normalColor);
-            lastEnabledButton.colors = colorBlock;
+            levelButtons[levelCompleted].colors = colorBlock;
         }
     }
 }
